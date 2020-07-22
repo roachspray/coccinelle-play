@@ -1,0 +1,962 @@
+Index: arm/mv/gpio.c
+===================================================================
+--- arm/mv/gpio.c	(revision 353295)
++++ arm/mv/gpio.c	(working copy)
+@@ -720,10 +720,6 @@
+ 
+ 	sd = (struct mv_gpio_pindev *)malloc(sizeof(struct mv_gpio_pindev),
+ 	    M_DEVBUF, M_WAITOK);
+-	if (sd == NULL) {
+-		mv_gpio_int_ack(&s);
+-		return;
+-	}
+ 	sd->pin = pin;
+ 	sd->dev = dev;
+ 
+Index: cam/ctl/ctl.c
+===================================================================
+--- cam/ctl/ctl.c	(revision 353295)
++++ cam/ctl/ctl.c	(working copy)
+@@ -2640,12 +2640,6 @@
+ 		}
+ 
+ 		entries = malloc(ooa_hdr->alloc_len, M_CTL, M_WAITOK | M_ZERO);
+-		if (entries == NULL) {
+-			printf("%s: could not allocate %d bytes for OOA "
+-			       "dump\n", __func__, ooa_hdr->alloc_len);
+-			retval = ENOMEM;
+-			break;
+-		}
+ 
+ 		mtx_lock(&softc->ctl_lock);
+ 		if ((ooa_hdr->flags & CTL_OOA_FLAG_ALL_LUNS) == 0 &&
+Index: compat/linuxkpi/common/src/linux_usb.c
+===================================================================
+--- compat/linuxkpi/common/src/linux_usb.c	(revision 353295)
++++ compat/linuxkpi/common/src/linux_usb.c	(working copy)
+@@ -1008,16 +1008,14 @@
+ 	}
+ 
+ 	urb = malloc(size, M_USBDEV, M_WAITOK | M_ZERO);
+-	if (urb) {
+ 
+-		cv_init(&urb->cv_wait, "URBWAIT");
+-		if (iso_packets == 0xFFFF) {
+-			urb->setup_packet = (void *)(urb + 1);
+-			urb->transfer_buffer = (void *)(urb->setup_packet +
+-			    sizeof(struct usb_device_request));
+-		} else {
+-			urb->number_of_packets = iso_packets;
+-		}
++	cv_init(&urb->cv_wait, "URBWAIT");
++	if (iso_packets == 0xFFFF) {
++		urb->setup_packet = (void *)(urb + 1);
++		urb->transfer_buffer = (void *)(urb->setup_packet +
++						sizeof(struct usb_device_request));
++	} else {
++		urb->number_of_packets = iso_packets;
+ 	}
+ 	return (urb);
+ }
+Index: contrib/rdma/krping/krping_dev.c
+===================================================================
+--- contrib/rdma/krping/krping_dev.c	(revision 353295)
++++ contrib/rdma/krping/krping_dev.c	(working copy)
+@@ -174,10 +174,6 @@
+ 	krping_t *krpingmsg;
+ 
+ 	krpingmsg = malloc(sizeof *krpingmsg, M_DEVBUF, M_WAITOK|M_ZERO);
+-	if (!krpingmsg) {
+-		uprintf("Could not malloc mem!\n");
+-		return ENOMEM;
+-	}
+ 
+ 	cp = krpingmsg->msg;
+ 	while (uio->uio_resid) {
+Index: dev/ath/if_ath_lna_div.c
+===================================================================
+--- dev/ath/if_ath_lna_div.c	(revision 353295)
++++ dev/ath/if_ath_lna_div.c	(working copy)
+@@ -100,12 +100,6 @@
+ 
+ 	ss = malloc(sizeof(struct if_ath_ant_comb_state),
+ 	    M_TEMP, M_WAITOK | M_ZERO);
+-	if (ss == NULL) {
+-		device_printf(sc->sc_dev, "%s: failed to allocate\n",
+-		    __func__);
+-		/* Don't fail at this point */
+-		return (0);
+-	}
+ 
+ 	/* Fetch the hardware configuration */
+ 	OS_MEMZERO(&div_ant_conf, sizeof(div_ant_conf));
+Index: dev/ath/if_ath_spectral.c
+===================================================================
+--- dev/ath/if_ath_spectral.c	(revision 353295)
++++ dev/ath/if_ath_spectral.c	(working copy)
+@@ -117,12 +117,6 @@
+ 	ss = malloc(sizeof(struct ath_spectral_state),
+ 	    M_TEMP, M_WAITOK | M_ZERO);
+ 
+-	if (ss == NULL) {
+-		device_printf(sc->sc_dev, "%s: failed to alloc memory\n",
+-		    __func__);
+-		return (-ENOMEM);
+-	}
+-
+ 	sc->sc_spectral = ss;
+ 
+ 	(void) ath_hal_spectral_get_config(sc->sc_ah, &ss->spectral_state);
+Index: dev/cxgbe/t4_main.c
+===================================================================
+--- dev/cxgbe/t4_main.c	(revision 353295)
++++ dev/cxgbe/t4_main.c	(working copy)
+@@ -9508,10 +9508,6 @@
+ 	}
+ 
+ 	fw_data = malloc(fw->len, M_CXGBE, M_WAITOK);
+-	if (fw_data == NULL) {
+-		rc = ENOMEM;
+-		goto done;
+-	}
+ 
+ 	rc = copyin(fw->data, fw_data, fw->len);
+ 	if (rc == 0)
+@@ -9540,10 +9536,6 @@
+ 	}
+ 
+ 	cfg_data = malloc(cfg->len, M_CXGBE, M_WAITOK);
+-	if (cfg_data == NULL) {
+-		rc = ENOMEM;
+-		goto done;
+-	}
+ 
+ 	rc = copyin(cfg->data, cfg_data, cfg->len);
+ 	if (rc == 0)
+@@ -9589,10 +9581,6 @@
+ 	}
+ 
+ 	br_data = malloc(br->len, M_CXGBE, M_WAITOK);
+-	if (br_data == NULL) {
+-		rc = ENOMEM;
+-		goto done;
+-	}
+ 
+ 	rc = copyin(br->data, br_data, br->len);
+ 	if (rc == 0)
+@@ -9621,10 +9609,6 @@
+ 	}
+ 
+ 	bc_data = malloc(bc->len, M_CXGBE, M_WAITOK);
+-	if (bc_data == NULL) {
+-		rc = ENOMEM;
+-		goto done;
+-	}
+ 
+ 	rc = copyin(bc->data, bc_data, bc->len);
+ 	if (rc == 0)
+Index: dev/drm2/drm_crtc.c
+===================================================================
+--- dev/drm2/drm_crtc.c	(revision 353295)
++++ dev/drm2/drm_crtc.c	(working copy)
+@@ -1999,10 +1999,6 @@
+ 		connector_set = malloc(crtc_req->count_connectors *
+ 					sizeof(struct drm_connector *),
+ 					DRM_MEM_KMS, M_WAITOK);
+-		if (!connector_set) {
+-			ret = -ENOMEM;
+-			goto out;
+-		}
+ 
+ 		for (i = 0; i < crtc_req->count_connectors; i++) {
+ 			set_connectors_ptr = (uint32_t __user *)(unsigned long)crtc_req->set_connectors_ptr;
+@@ -2524,10 +2520,6 @@
+ 		}
+ 		clips = malloc(num_clips * sizeof(*clips), DRM_MEM_KMS,
+ 		    M_WAITOK | M_ZERO);
+-		if (!clips) {
+-			ret = -ENOMEM;
+-			goto out_err1;
+-		}
+ 
+ 		ret = copy_from_user(clips, clips_ptr,
+ 				     num_clips * sizeof(*clips));
+@@ -3633,12 +3625,6 @@
+ 		mtx_unlock(&dev->event_lock);
+ 
+ 		e = malloc(sizeof *e, DRM_MEM_KMS, M_WAITOK | M_ZERO);
+-		if (e == NULL) {
+-			mtx_lock(&dev->event_lock);
+-			file_priv->event_space += sizeof e->event;
+-			mtx_unlock(&dev->event_lock);
+-			goto out;
+-		}
+ 
+ 		e->event.base.type = DRM_EVENT_FLIP_COMPLETE;
+ 		e->event.base.length = sizeof e->event;
+Index: dev/hpt27xx/hpt27xx_osm_bsd.c
+===================================================================
+--- dev/hpt27xx/hpt27xx_osm_bsd.c	(revision 353295)
++++ dev/hpt27xx/hpt27xx_osm_bsd.c	(working copy)
+@@ -111,10 +111,6 @@
+ 	if (!ldm_register_adapter(&hba->ldm_adapter)) {
+ 		size = ldm_get_vbus_size();
+ 		vbus_ext = malloc(sizeof(VBUS_EXT) + size, M_DEVBUF, M_WAITOK);
+-		if (!vbus_ext) {
+-			free(hba->ldm_adapter.him_handle, M_DEVBUF);
+-			return ENXIO;
+-		}
+ 		memset(vbus_ext, 0, sizeof(VBUS_EXT));
+ 		vbus_ext->ext_type = EXT_TYPE_VBUS;
+ 		ldm_create_vbus((PVBUS)vbus_ext->vbus, vbus_ext);
+Index: dev/hptmv/entry.c
+===================================================================
+--- dev/hptmv/entry.c	(revision 353295)
++++ dev/hptmv/entry.c	(working copy)
+@@ -2008,16 +2008,10 @@
+ 	}
+ 
+ 
+-	if((ccb = (union ccb *)malloc(sizeof(*ccb), M_DEVBUF, M_WAITOK)) != (union ccb*)NULL)
+-	{
+-		bzero(ccb, sizeof(*ccb));
+-		ccb->ccb_h.pinfo.priority = 1;
+-		ccb->ccb_h.pinfo.index = CAM_UNQUEUED_INDEX;
+-	}
+-	else
+-	{
+-		return ENOMEM;
+-	}
++	ccb = (union ccb *)malloc(sizeof(*ccb), M_DEVBUF, M_WAITOK);
++	bzero(ccb, sizeof(*ccb));
++	ccb->ccb_h.pinfo.priority = 1;
++	ccb->ccb_h.pinfo.index = CAM_UNQUEUED_INDEX;
+ 	/*
+ 	 * Create the device queue for our SIM(s).
+ 	 */
+Index: dev/iser/iser_verbs.c
+===================================================================
+--- dev/iser/iser_verbs.c	(revision 353295)
++++ dev/iser/iser_verbs.c	(working copy)
+@@ -344,10 +344,6 @@
+ 	int ret;
+ 
+ 	desc = malloc(sizeof(*desc), M_ISER_VERBS, M_WAITOK | M_ZERO);
+-	if (!desc) {
+-		ISER_ERR("Failed to allocate a new fastreg descriptor");
+-		return (NULL);
+-	}
+ 
+ 	ret = iser_alloc_reg_res(ib_device, pd, &desc->rsc);
+ 	if (ret) {
+Index: dev/ixl/ixl_pf_main.c
+===================================================================
+--- dev/ixl/ixl_pf_main.c	(revision 353295)
++++ dev/ixl/ixl_pf_main.c	(working copy)
+@@ -4786,10 +4786,6 @@
+ 	/* This amount is only necessary if reading the entire cluster into memory */
+ #define IXL_FINAL_BUFF_SIZE	(1280 * 1024)
+ 	final_buff = malloc(IXL_FINAL_BUFF_SIZE, M_DEVBUF, M_WAITOK);
+-	if (final_buff == NULL) {
+-		device_printf(dev, "Could not allocate memory for output.\n");
+-		goto out;
+-	}
+ 	int final_buff_len = 0;
+ 
+ 	u8 cluster_id = 1;
+@@ -4848,7 +4844,6 @@
+ 
+ free_out:
+ 	free(final_buff, M_DEVBUF);
+-out:
+ 	error = sbuf_finish(buf);
+ 	if (error)
+ 		device_printf(dev, "Error finishing sbuf: %d\n", error);
+Index: dev/mfi/mfi.c
+===================================================================
+--- dev/mfi/mfi.c	(revision 353295)
++++ dev/mfi/mfi.c	(working copy)
+@@ -3638,11 +3638,9 @@
+ 		mfi_aen_entry = malloc(sizeof(struct mfi_aen), M_MFIBUF,
+ 		    M_WAITOK);
+ 		mtx_lock(&sc->mfi_io_lock);
+-		if (mfi_aen_entry != NULL) {
+-			mfi_aen_entry->p = curproc;
+-			TAILQ_INSERT_TAIL(&sc->mfi_aen_pids, mfi_aen_entry,
+-			    aen_link);
+-		}
++		mfi_aen_entry->p = curproc;
++		TAILQ_INSERT_TAIL(&sc->mfi_aen_pids, mfi_aen_entry,
++				  aen_link);
+ 		error = mfi_aen_register(sc, l_aen.laen_seq_num,
+ 		    l_aen.laen_class_locale);
+ 
+Index: dev/mlx/mlx.c
+===================================================================
+--- dev/mlx/mlx.c	(revision 353295)
++++ dev/mlx/mlx.c	(working copy)
+@@ -2079,8 +2079,9 @@
+ 	    goto out;
+ 	}
+ 	MLX_IO_UNLOCK(sc);
+-	if (((kbuf = malloc(mu->mu_datasize, M_DEVBUF, M_WAITOK)) == NULL) ||
+-	    (error = copyin(mu->mu_buf, kbuf, mu->mu_datasize))) {
++	kbuf = malloc(mu->mu_datasize, M_DEVBUF, M_WAITOK);
++	error = copyin(mu->mu_buf, kbuf, mu->mu_datasize);
++	if (error) {
+ 	    MLX_IO_LOCK(sc);
+ 	    goto out;
+ 	}
+Index: dev/mpr/mpr.c
+===================================================================
+--- dev/mpr/mpr.c	(revision 353295)
++++ dev/mpr/mpr.c	(working copy)
+@@ -2716,11 +2716,6 @@
+ 	int error = 0;
+ 
+ 	eh = malloc(sizeof(struct mpr_event_handle), M_MPR, M_WAITOK|M_ZERO);
+-	if (!eh) {
+-		mpr_dprint(sc, MPR_EVENT|MPR_ERROR,
+-		    "Cannot allocate event memory\n");
+-		return (ENOMEM);
+-	}
+ 	eh->callback = cb;
+ 	eh->data = data;
+ 	TAILQ_INSERT_TAIL(&sc->event_list, eh, eh_list);
+Index: dev/mpr/mpr_sas.c
+===================================================================
+--- dev/mpr/mpr_sas.c	(revision 353295)
++++ dev/mpr/mpr_sas.c	(working copy)
+@@ -745,11 +745,6 @@
+ 	mpr_dprint(sc, MPR_INIT, "%s entered\n", __func__);
+ 
+ 	sassc = malloc(sizeof(struct mprsas_softc), M_MPR, M_WAITOK|M_ZERO);
+-	if (!sassc) {
+-		mpr_dprint(sc, MPR_INIT|MPR_ERROR,
+-		    "Cannot allocate SAS subsystem memory\n");
+-		return (ENOMEM);
+-	}
+ 
+ 	/*
+ 	 * XXX MaxTargets could change during a reinit.  Since we don't
+Index: dev/mpr/mpr_user.c
+===================================================================
+--- dev/mpr/mpr_user.c	(revision 353295)
++++ dev/mpr/mpr_user.c	(working copy)
+@@ -1542,13 +1542,6 @@
+ 	bzero(sc->fw_diag_buffer, buffer_size);
+ 
+ 	ctx = malloc(sizeof(*ctx), M_MPR, M_WAITOK | M_ZERO);
+-	if (ctx == NULL) {
+-		device_printf(sc->mpr_dev, "%s: context malloc failed\n",
+-		    __func__);
+-		*return_code = MPR_FW_DIAG_ERROR_NO_BUFFER;
+-		status = MPR_DIAG_FAILURE;
+-		goto bailout;
+-	}
+ 	ctx->addr = &sc->fw_diag_busaddr;
+ 	ctx->buffer_dmat = sc->fw_diag_dmat;
+ 	ctx->buffer_dmamap = sc->fw_diag_map;
+Index: dev/mps/mps.c
+===================================================================
+--- dev/mps/mps.c	(revision 353295)
++++ dev/mps/mps.c	(working copy)
+@@ -2584,10 +2584,6 @@
+ 	int error = 0;
+ 
+ 	eh = malloc(sizeof(struct mps_event_handle), M_MPT2, M_WAITOK|M_ZERO);
+-	if(!eh) {
+-		mps_dprint(sc, MPS_ERROR, "Cannot allocate event memory\n");
+-		return (ENOMEM);
+-	}
+ 	eh->callback = cb;
+ 	eh->data = data;
+ 	TAILQ_INSERT_TAIL(&sc->event_list, eh, eh_list);
+Index: dev/mps/mps_sas.c
+===================================================================
+--- dev/mps/mps_sas.c	(revision 353295)
++++ dev/mps/mps_sas.c	(working copy)
+@@ -727,11 +727,6 @@
+ 	mps_dprint(sc, MPS_INIT, "%s entered\n", __func__);
+ 
+ 	sassc = malloc(sizeof(struct mpssas_softc), M_MPT2, M_WAITOK|M_ZERO);
+-	if(!sassc) {
+-		mps_dprint(sc, MPS_INIT|MPS_ERROR,
+-		    "Cannot allocate SAS controller memory\n");
+-		return (ENOMEM);
+-	}
+ 
+ 	/*
+ 	 * XXX MaxTargets could change during a reinit.  Since we don't
+Index: dev/mps/mps_user.c
+===================================================================
+--- dev/mps/mps_user.c	(revision 353295)
++++ dev/mps/mps_user.c	(working copy)
+@@ -1445,13 +1445,6 @@
+         bzero(sc->fw_diag_buffer, buffer_size);
+ 
+ 	ctx = malloc(sizeof(*ctx), M_MPSUSER, M_WAITOK | M_ZERO);
+-	if (ctx == NULL) {
+-		device_printf(sc->mps_dev, "%s: context malloc failed\n",
+-		    __func__);
+-		*return_code = MPS_FW_DIAG_ERROR_NO_BUFFER;
+-		status = MPS_DIAG_FAILURE;
+-		goto bailout;
+-	}
+ 	ctx->addr = &sc->fw_diag_busaddr;
+ 	ctx->buffer_dmat = sc->fw_diag_dmat;
+ 	ctx->buffer_dmamap = sc->fw_diag_map;
+Index: dev/ntb/test/ntb_tool.c
+===================================================================
+--- dev/ntb/test/ntb_tool.c	(revision 353295)
++++ dev/ntb/test/ntb_tool.c	(working copy)
+@@ -619,10 +619,6 @@
+ write:
+ 	data_buf_size = *buf_size;
+ 	data_buf = malloc(data_buf_size, M_NTB_TOOL, M_WAITOK | M_ZERO);
+-	if (!data_buf) {
+-		rc = ENOMEM;
+-		goto out;
+-	}
+ 
+ 	if (s_pflag)
+ 		memset(data_buf, pattern, data_buf_size);
+Index: dev/nvme/nvme_ns.c
+===================================================================
+--- dev/nvme/nvme_ns.c	(revision 353295)
++++ dev/nvme/nvme_ns.c	(working copy)
+@@ -473,10 +473,6 @@
+ 		dsm_range =
+ 		    malloc(sizeof(struct nvme_dsm_range), M_NVME,
+ 		    M_ZERO | M_WAITOK);
+-		if (!dsm_range) {
+-			err = ENOMEM;
+-			break;
+-		}
+ 		dsm_range->length =
+ 		    htole32(bp->bio_bcount/nvme_ns_get_sector_size(ns));
+ 		dsm_range->starting_lba =
+Index: dev/pms/freebsd/driver/ini/src/agtiapi.c
+===================================================================
+--- dev/pms/freebsd/driver/ini/src/agtiapi.c	(revision 353295)
++++ dev/pms/freebsd/driver/ini/src/agtiapi.c	(working copy)
+@@ -319,13 +319,6 @@
+                              sizeof(void *) );
+   AGTIAPI_PRINTK("agtiapi_getdevlist: portCount %d\n", pCard->portCount);
+   devList = malloc(memNeeded1, TEMP2, M_WAITOK); 
+-  if (devList == NULL)
+-  {
+-    AGTIAPI_PRINTK("agtiapi_getdevlist: failed to allocate memory\n");
+-    ret_val = IOCTL_CALL_FAIL;
+-    agIOCTLPayload->Status = IOCTL_ERR_STATUS_INTERNAL_ERROR;
+-    return ret_val;
+-  }
+   osti_memset(devList, 0,  memNeeded1);
+   pPortalData = &pCard->pPortalData[0];
+   pDeviceHandleList = (bit8*)devList;
+Index: dev/sound/usb/uaudio.c
+===================================================================
+--- dev/sound/usb/uaudio.c	(revision 353295)
++++ dev/sound/usb/uaudio.c	(working copy)
+@@ -4986,10 +4986,6 @@
+ 	iot = malloc(sizeof(struct uaudio_terminal_node) * 256, M_TEMP,
+ 	    M_WAITOK | M_ZERO);
+ 
+-	if (iot == NULL) {
+-		DPRINTF("no memory!\n");
+-		goto done;
+-	}
+ 	while ((desc = usb_desc_foreach(cd, desc))) {
+ 
+ 		dp = desc;
+Index: dev/usb/input/uhid.c
+===================================================================
+--- dev/usb/input/uhid.c	(revision 353295)
++++ dev/usb/input/uhid.c	(working copy)
+@@ -450,10 +450,6 @@
+ 
+ 	if (kern_data == NULL) {
+ 		kern_data = malloc(len, M_USBDEV, M_WAITOK);
+-		if (kern_data == NULL) {
+-			err = ENOMEM;
+-			goto done;
+-		}
+ 		free_data = 1;
+ 	}
+ 	err = usbd_req_get_report(sc->sc_udev, NULL, kern_data,
+@@ -486,10 +482,6 @@
+ 
+ 	if (kern_data == NULL) {
+ 		kern_data = malloc(len, M_USBDEV, M_WAITOK);
+-		if (kern_data == NULL) {
+-			err = ENOMEM;
+-			goto done;
+-		}
+ 		free_data = 1;
+ 		err = copyin(user_data, kern_data, len);
+ 		if (err) {
+Index: dev/usb/input/uhid_snes.c
+===================================================================
+--- dev/usb/input/uhid_snes.c	(revision 353295)
++++ dev/usb/input/uhid_snes.c	(working copy)
+@@ -168,10 +168,6 @@
+ 
+ 	if (kern_data == NULL) {
+ 		kern_data = malloc(len, M_USBDEV, M_WAITOK);
+-		if (kern_data == NULL) {
+-			err = ENOMEM;
+-			goto done;
+-		}
+ 		free_data = 1;
+ 	}
+ 	err = usbd_req_get_report(sc->sc_udev, NULL, kern_data,
+@@ -203,10 +199,6 @@
+ 
+ 	if (kern_data == NULL) {
+ 		kern_data = malloc(len, M_USBDEV, M_WAITOK);
+-		if (kern_data == NULL) {
+-			err = ENOMEM;
+-			goto done;
+-		}
+ 		free_data = 1;
+ 		err = copyin(user_data, kern_data, len);
+ 		if (err) {
+Index: dev/usb/storage/ustorage_fs.c
+===================================================================
+--- dev/usb/storage/ustorage_fs.c	(revision 353295)
++++ dev/usb/storage/ustorage_fs.c	(working copy)
+@@ -380,10 +380,6 @@
+ 			ustorage_fs_ramdisk =
+ 			    malloc(USTORAGE_FS_RAM_SECT << 9, M_USB,
+ 			    M_ZERO | M_WAITOK);
+-
+-			if (ustorage_fs_ramdisk == NULL) {
+-				return (ENOMEM);
+-			}
+ 		}
+ 		sc->sc_lun[0].memory_image = ustorage_fs_ramdisk;
+ 		sc->sc_lun[0].num_sectors = USTORAGE_FS_RAM_SECT;
+Index: dev/usb/usb_dev.c
+===================================================================
+--- dev/usb/usb_dev.c	(revision 353295)
++++ dev/usb/usb_dev.c	(working copy)
+@@ -385,13 +385,11 @@
+ 	struct usb_fifo *f;
+ 
+ 	f = malloc(sizeof(*f), M_USBDEV, M_WAITOK | M_ZERO);
+-	if (f != NULL) {
+-		cv_init(&f->cv_io, "FIFO-IO");
+-		cv_init(&f->cv_drain, "FIFO-DRAIN");
+-		f->priv_mtx = mtx;
+-		f->refcount = 1;
+-		knlist_init_mtx(&f->selinfo.si_note, mtx);
+-	}
++	cv_init(&f->cv_io, "FIFO-IO");
++	cv_init(&f->cv_drain, "FIFO-DRAIN");
++	f->priv_mtx = mtx;
++	f->refcount = 1;
++	knlist_init_mtx(&f->selinfo.si_note, mtx);
+ 	return (f);
+ }
+ 
+@@ -2308,9 +2306,6 @@
+ 	struct usb_symlink *ps;
+ 
+ 	ps = malloc(sizeof(*ps), M_USBDEV, M_WAITOK);
+-	if (ps == NULL) {
+-		return (ps);
+-	}
+ 	/* XXX no longer needed */
+ 	strlcpy(ps->src_path, target, sizeof(ps->src_path));
+ 	ps->src_len = strlen(ps->src_path);
+Index: dev/usb/usb_device.c
+===================================================================
+--- dev/usb/usb_device.c	(revision 353295)
++++ dev/usb/usb_device.c	(working copy)
+@@ -1709,9 +1709,6 @@
+ 		return (NULL);
+ 	}
+ 	udev = malloc(sizeof(*udev), M_USB, M_WAITOK | M_ZERO);
+-	if (udev == NULL) {
+-		return (NULL);
+-	}
+ 	/* initialise our SX-lock */
+ 	sx_init_flags(&udev->enum_sx, "USB config SX lock", SX_DUPOK);
+ 	sx_init_flags(&udev->sr_sx, "USB suspend and resume SX lock", SX_NOWITNESS);
+Index: dev/usb/usb_mbuf.c
+===================================================================
+--- dev/usb/usb_mbuf.c	(revision 353295)
++++ dev/usb/usb_mbuf.c	(working copy)
+@@ -78,15 +78,10 @@
+ 		alloc_size = (block_size + sizeof(struct usb_mbuf)) * nblocks;
+ 
+ 		free_ptr = malloc(alloc_size, type, M_WAITOK | M_ZERO);
+-
+-		if (free_ptr == NULL) {
+-			goto done;
+-		}
+ 		m_ptr = free_ptr;
+ 		data_ptr = (void *)(m_ptr + nblocks);
+ 
+ 		while (nblocks--) {
+-
+ 			m_ptr->cur_data_ptr =
+ 			    m_ptr->min_data_ptr = data_ptr;
+ 
+@@ -99,6 +94,5 @@
+ 			data_ptr += block_size;
+ 		}
+ 	}
+-done:
+ 	return (free_ptr);
+ }
+Index: dev/usb/usb_transfer.c
+===================================================================
+--- dev/usb/usb_transfer.c	(revision 353295)
++++ dev/usb/usb_transfer.c	(working copy)
+@@ -1268,13 +1268,6 @@
+ 		/* allocate zeroed memory */
+ 		buf = malloc(parm->size[0], M_USB, M_WAITOK | M_ZERO);
+ 
+-		if (buf == NULL) {
+-			parm->err = USB_ERR_NOMEM;
+-			DPRINTFN(0, "cannot allocate memory block for "
+-			    "configuration (%d bytes)\n",
+-			    parm->size[0]);
+-			goto done;
+-		}
+ 		parm->dma_tag_p = USB_ADD_BYTES(buf, parm->size[1]);
+ 		parm->dma_page_ptr = USB_ADD_BYTES(buf, parm->size[3]);
+ 		parm->dma_page_cache_ptr = USB_ADD_BYTES(buf, parm->size[4]);
+Index: fs/cuse/cuse.c
+===================================================================
+--- fs/cuse/cuse.c	(revision 353295)
++++ fs/cuse/cuse.c	(working copy)
+@@ -1205,10 +1205,6 @@
+ 
+ 		pcsd = malloc(sizeof(*pcsd), M_CUSE, M_WAITOK | M_ZERO);
+ 
+-		if (pcsd == NULL) {
+-			error = ENOMEM;
+-			break;
+-		}
+ 		pcsd->server = pcs;
+ 
+ 		pcsd->user_dev = pcd->dev;
+@@ -1420,11 +1416,6 @@
+ 		return (EINVAL);
+ 
+ 	pcc = malloc(sizeof(*pcc), M_CUSE, M_WAITOK | M_ZERO);
+-	if (pcc == NULL) {
+-		/* drop reference on server */
+-		cuse_server_unref(pcs);
+-		return (ENOMEM);
+-	}
+ 	if (devfs_set_cdevpriv(pcc, &cuse_client_free)) {
+ 		printf("Cuse: Cannot set cdevpriv.\n");
+ 		/* drop reference on server */
+Index: fs/ext2fs/ext2_alloc.c
+===================================================================
+--- fs/ext2fs/ext2_alloc.c	(revision 353295)
++++ fs/ext2fs/ext2_alloc.c	(working copy)
+@@ -424,9 +424,6 @@
+ 	}
+ 
+ 	ip = malloc(sizeof(struct inode), M_EXT2NODE, M_WAITOK | M_ZERO);
+-	if (ip == NULL) {
+-		return (ENOMEM);
+-	}
+ 
+ 	/* Allocate a new vnode/inode. */
+ 	if ((error = getnewvnode("ext2fs", ump->um_mountp, &ext2_vnodeops, &vp)) != 0) {
+Index: fs/ext2fs/ext2_lookup.c
+===================================================================
+--- fs/ext2fs/ext2_lookup.c	(revision 353295)
++++ fs/ext2fs/ext2_lookup.c	(working copy)
+@@ -891,10 +891,6 @@
+ 	    EXT2F_ROCOMPAT_METADATA_CKSUM)) {
+ 		entry->e2d_reclen = dirblksize - sizeof(struct ext2fs_direct_tail);
+ 		buf = malloc(dirblksize, M_TEMP, M_WAITOK);
+-		if (!buf) {
+-			error = ENOMEM;
+-			goto out;
+-		}
+ 		memcpy(buf, entry, EXT2_DIR_REC_LEN(entry->e2d_namlen));
+ 		ext2_init_dirent_tail(EXT2_DIRENT_TAIL(buf, dirblksize));
+ 		ext2_dirent_csum_set(dp, (struct ext2fs_direct_2 *)buf);
+Index: fs/ext2fs/ext2_vnops.c
+===================================================================
+--- fs/ext2fs/ext2_vnops.c	(revision 353295)
++++ fs/ext2fs/ext2_vnops.c	(working copy)
+@@ -1074,10 +1074,6 @@
+ 			ext2_dec_nlink(dp);
+ 			dp->i_flag |= IN_CHANGE;
+ 			dirbuf = malloc(dp->i_e2fs->e2fs_bsize, M_TEMP, M_WAITOK | M_ZERO);
+-			if (!dirbuf) {
+-				error = ENOMEM;
+-				goto bad;
+-			}
+ 			error = vn_rdwr(UIO_READ, fvp, (caddr_t)dirbuf,
+ 			    ip->i_e2fs->e2fs_bsize, (off_t)0,
+ 			    UIO_SYSSPACE, IO_NODELOCKED | IO_NOMACCHECK,
+@@ -1387,12 +1383,6 @@
+ #define DIRBLKSIZ  VTOI(dvp)->i_e2fs->e2fs_bsize
+ 	dirtemplate.dotdot_reclen = DIRBLKSIZ - 12;
+ 	buf = malloc(DIRBLKSIZ, M_TEMP, M_WAITOK | M_ZERO);
+-	if (!buf) {
+-		error = ENOMEM;
+-		ext2_dec_nlink(dp);
+-		dp->i_flag |= IN_CHANGE;
+-		goto bad;
+-	}
+ 	if (EXT2_HAS_RO_COMPAT_FEATURE(fs, EXT2F_ROCOMPAT_METADATA_CKSUM)) {
+ 		dirtemplate.dotdot_reclen -= sizeof(struct ext2fs_direct_tail);
+ 		ext2_init_dirent_tail(EXT2_DIRENT_TAIL(buf, DIRBLKSIZ));
+Index: fs/nfsclient/nfs_clstate.c
+===================================================================
+--- fs/nfsclient/nfs_clstate.c	(revision 353295)
++++ fs/nfsclient/nfs_clstate.c	(working copy)
+@@ -3550,10 +3550,8 @@
+ 				NFSUNLOCKCLSTATE();
+ 			} else
+ 				error = NFSERR_NOMATCHLAYOUT;
+-			if (recallp != NULL) {
+-				free(recallp, M_NFSLAYRECALL);
+-				recallp = NULL;
+-			}
++			free(recallp, M_NFSLAYRECALL);
++			recallp = NULL;
+ 			break;
+ 		case NFSV4OP_CBSEQUENCE:
+ 			NFSM_DISSECT(tl, uint32_t *, NFSX_V4SESSIONID +
+Index: mips/atheros/ar531x/apb.c
+===================================================================
+--- mips/atheros/ar531x/apb.c	(revision 353295)
++++ mips/atheros/ar531x/apb.c	(working copy)
+@@ -627,10 +627,6 @@
+ 	struct apb_ivar	*ivar;
+ 
+ 	ivar = malloc(sizeof(struct apb_ivar), M_DEVBUF, M_WAITOK | M_ZERO);
+-	if (ivar == NULL) {
+-		printf("Failed to allocate ivar\n");
+-		return (0);
+-	}
+ 	resource_list_init(&ivar->resources);
+ 
+ 	child = device_add_child_ordered(bus, order, name, unit);
+Index: mips/atheros/ar71xx_caldata.c
+===================================================================
+--- mips/atheros/ar71xx_caldata.c	(revision 353295)
++++ mips/atheros/ar71xx_caldata.c	(working copy)
+@@ -86,11 +86,6 @@
+ 	    flash_addr, size);
+ 
+ 	eeprom = malloc(size, M_DEVBUF, M_WAITOK | M_ZERO);
+-	if (! eeprom) {
+-		device_printf(dev, "%s: malloc failed for '%s', aborting EEPROM\n",
+-		__func__, buf);
+-		return;
+-	}
+ 
+ 	memcpy(eeprom, cal_data, size);
+ 
+Index: mips/atheros/ar71xx_fixup.c
+===================================================================
+--- mips/atheros/ar71xx_fixup.c	(revision 353295)
++++ mips/atheros/ar71xx_fixup.c	(working copy)
+@@ -86,12 +86,6 @@
+ 	    flash_addr, size);
+ 
+ 	eeprom = malloc(size, M_DEVBUF, M_WAITOK | M_ZERO);
+-	if (! eeprom) {
+-		device_printf(dev,
+-			    "%s: malloc failed for '%s', aborting EEPROM\n",
+-			    __func__, buf);
+-			return;
+-	}
+ 
+ 	memcpy(eeprom, cal_data, size);
+ 
+Index: net/if_vlan.c
+===================================================================
+--- net/if_vlan.c	(revision 353295)
++++ net/if_vlan.c	(working copy)
+@@ -447,11 +447,6 @@
+ 		return;
+ 
+ 	hash2 = malloc(sizeof(struct ifvlanhead) * n2, M_VLAN, M_WAITOK);
+-	if (hash2 == NULL) {
+-		printf("%s: out of memory -- hash size not changed\n",
+-		    __func__);
+-		return;		/* We can live with the old hash table */
+-	}
+ 	for (j = 0; j < n2; j++)
+ 		CK_SLIST_INIT(&hash2[j]);
+ 	for (i = 0; i < n; i++)
+Index: netinet/siftr.c
+===================================================================
+--- netinet/siftr.c	(revision 353295)
++++ netinet/siftr.c	(working copy)
+@@ -400,21 +400,10 @@
+ 		/* Create a new hash node to store the flow's counter. */
+ 		hash_node = malloc(sizeof(struct flow_hash_node),
+ 		    M_SIFTR_HASHNODE, M_WAITOK);
+-
+-		if (hash_node != NULL) {
+ 			/* Initialise our new hash node list entry. */
+-			hash_node->counter = 0;
+-			memcpy(hash_node->key, key, sizeof(key));
+-			LIST_INSERT_HEAD(counter_list, hash_node, nodes);
+-		} else {
+-			/* Malloc failed. */
+-			if (pkt_node->direction == DIR_IN)
+-				ss->nskip_in_malloc++;
+-			else
+-				ss->nskip_out_malloc++;
+-
+-			return;
+-		}
++		hash_node->counter = 0;
++		memcpy(hash_node->key, key, sizeof(key));
++		LIST_INSERT_HEAD(counter_list, hash_node, nodes);
+ 	} else if (siftr_pkts_per_log > 1) {
+ 		/*
+ 		 * Taking the remainder of the counter divided
+Index: netpfil/ipfw/ip_dummynet.c
+===================================================================
+--- netpfil/ipfw/ip_dummynet.c	(revision 353295)
++++ netpfil/ipfw/ip_dummynet.c	(working copy)
+@@ -1348,10 +1348,6 @@
+ 		return err;
+ 	}
+ 	ep = malloc(l, M_DUMMYNET, M_WAITOK);
+-	if(!ep) {
+-		err = ENOMEM ;
+-		return err;
+-	}
+ 	do {
+ 		err = sooptcopyin(sopt, ep, l, l);
+ 		if(err)
+@@ -1403,10 +1399,6 @@
+ 		return err;
+ 	}
+ 	ep = malloc(l, M_DUMMYNET, M_WAITOK);
+-	if(!ep) {
+-		err = ENOMEM ;
+-		return err;
+-	}
+ 	do {
+ 		err = sooptcopyin(sopt, ep, l, l);
+ 		if(err)
+Index: opencrypto/cryptodev.c
+===================================================================
+--- opencrypto/cryptodev.c	(revision 353295)
++++ opencrypto/cryptodev.c	(working copy)
+@@ -1257,10 +1257,6 @@
+ 	}
+ 
+ 	krp = (struct cryptkop *)malloc(sizeof *krp, M_XDATA, M_WAITOK|M_ZERO);
+-	if (!krp) {
+-		SDT_PROBE1(opencrypto, dev, ioctl, error, __LINE__);
+-		return (ENOMEM);
+-	}
+ 	krp->krp_op = kop->crk_op;
+ 	krp->krp_status = kop->crk_status;
+ 	krp->krp_iparams = kop->crk_iparams;
+Index: rpc/rpcsec_gss/svc_rpcsec_gss.c
+===================================================================
+--- rpc/rpcsec_gss/svc_rpcsec_gss.c	(revision 353295)
++++ rpc/rpcsec_gss/svc_rpcsec_gss.c	(working copy)
+@@ -764,30 +764,29 @@
+ 	 * here for "{ " and "}\0".
+ 	 */
+ 	string_length += 4;
+-	if ((bp = malloc(string_length, M_GSSAPI, M_WAITOK | M_ZERO))) {
+-		strcpy(bp, "{ ");
+-		number = (unsigned long) cp[0];
+-		sprintf(numstr, "%ld ", number/40);
+-		strcat(bp, numstr);
+-		sprintf(numstr, "%ld ", number%40);
+-		strcat(bp, numstr);
+-		number = 0;
+-		cp = (unsigned char *) oid->elements;
+-		for (i=1; i<oid->length; i++) {
+-			number = (number << 7) | (cp[i] & 0x7f);
+-			if ((cp[i] & 0x80) == 0) {
+-				sprintf(numstr, "%ld ", number);
+-				strcat(bp, numstr);
+-				number = 0;
+-			}
++	bp = malloc(string_length, M_GSSAPI, M_ZERO | M_WAITOK);
++	strcpy(bp, "{ ");
++	number = (unsigned long) cp[0];
++	sprintf(numstr, "%ld ", number/40);
++	strcat(bp, numstr);
++	sprintf(numstr, "%ld ", number%40);
++	strcat(bp, numstr);
++	number = 0;
++	cp = (unsigned char *) oid->elements;
++	for (i=1; i<oid->length; i++) {
++		number = (number << 7) | (cp[i] & 0x7f);
++		if ((cp[i] & 0x80) == 0) {
++			sprintf(numstr, "%ld ", number);
++			strcat(bp, numstr);
++			number = 0;
+ 		}
+-		strcat(bp, "}");
+-		oid_str->length = strlen(bp)+1;
+-		oid_str->value = (void *) bp;
+-		*minor_status = 0;
+-		return(GSS_S_COMPLETE);
+ 	}
++	strcat(bp, "}");
++	oid_str->length = strlen(bp)+1;
++	oid_str->value = (void *) bp;
+ 	*minor_status = 0;
++	return(GSS_S_COMPLETE);
++	*minor_status = 0;
+ 	return(GSS_S_FAILURE);
+ }
+ #endif
+Index: tests/framework/kern_testfrwk.c
+===================================================================
+--- tests/framework/kern_testfrwk.c	(revision 353295)
++++ tests/framework/kern_testfrwk.c	(working copy)
+@@ -191,10 +191,6 @@
+ 	}
+ 	/* Grab some memory */
+ 	kte = malloc(sizeof(struct kern_test_entry), M_KTFRWK, M_WAITOK);
+-	if (kte == NULL) {
+-		error = ENOMEM;
+-		goto out;
+-	}
+ 	KTFRWK_LOCK();
+ 	TAILQ_FOREACH(li, &kfrwk.kfrwk_testlist, next) {
+ 		if (strcmp(li->name, kt.name) == 0) {
+@@ -243,10 +239,6 @@
+ 		return (E2BIG);
+ 	}
+ 	te = malloc(sizeof(struct kern_test_list), M_KTFRWK, M_WAITOK);
+-	if (te == NULL) {
+-		error = ENOMEM;
+-		goto out;
+-	}
+ 	KTFRWK_LOCK();
+ 	/* First does it already exist? */
+ 	TAILQ_FOREACH(li, &kfrwk.kfrwk_testlist, next) {
+Index: xdr/xdr_sizeof.c
+===================================================================
+--- xdr/xdr_sizeof.c	(revision 353295)
++++ xdr/xdr_sizeof.c	(working copy)
+@@ -97,10 +97,7 @@
+ 		/* Free the earlier space and allocate new area */
+ 		if (xdrs->x_private)
+ 			free(xdrs->x_private, M_RPC);
+-		if ((xdrs->x_private = (caddr_t) malloc(len, M_RPC, M_WAITOK)) == NULL) {
+-			xdrs->x_base = 0;
+-			return (NULL);
+-		}
++		xdrs->x_private = (caddr_t) malloc(len, M_RPC, M_WAITOK);
+ 		xdrs->x_base = (caddr_t)(uintptr_t) len;
+ 		xdrs->x_handy += len;
+ 		return ((int32_t *) xdrs->x_private);
