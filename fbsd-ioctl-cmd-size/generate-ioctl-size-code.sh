@@ -11,10 +11,10 @@
 # 
 #
 
-if [ "$#" -ne "2" ]
+if [ "$#" -ne "1" ]
 then
-	printf "usage: findscript.sh <fbsdsrcroot> <outfileprefix>\n"
-	printf "  fbsdsrcroot - path to headers to look at for ioctl commands\n"
+	printf "usage: findscript.sh <fbsdsrcroot>\n"
+#	printf "  fbsdsrcroot - path to headers to look at for ioctl commands\n"
 	exit 1
 fi
 source_path=${1}
@@ -22,8 +22,8 @@ source_path=${1}
 # right now, the ioc-printfs.cocci does not allow for args to the python part
 # of the patch file :-/ i don't see it in the --help output, but it's probably
 # somewhere. len(sys.argv) gives just 1 -> `spatch` as program name.
-
-out_file=${2}
+#out_file=${2}
+out_file=ding
 out_c=${out_file}.c
 out_h=${out_file}.h
 
