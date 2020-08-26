@@ -16,7 +16,42 @@ pos1 << r.p1;
 macro_name << r.m;
 arg_type << r.t;
 @@
-with open("include.notes", "a") as h:
-	h.write("%s:%s:%s\n" % (pos1[0].file, macro_name, arg_type))
-	h.close()
-print('#include "%s"\n' % pos1[0].file)                                      
+import os
+import sys
+
+out_h = os.path.join(os.getcwd(), "ding.h")
+notes = os.path.join(os.getcwd(), "include.notes")
+
+h = None
+if os.path.exists(out_h) == False:
+	h = open(out_h, "wt")
+	start = """#ifndef	_DING_H
+#define	_DING_H
+#include "/usr/src/sys/net/ethernet.h"                                          
+#include "/usr/src/sys/sys/socket.h"                                            
+#include "/usr/src/sys/sys/_sockaddr_storage.h"                                 
+#include "/usr/src/sys/net/if_dl.h"                                             
+#include "/usr/src/sys/net/if_media.h"                                          
+                                                                                
+#include "/usr/src/sys/netinet/in.h"                                            
+#include "/usr/src/sys/net/if.h"                                                
+#include "/usr/src/sys/net/if_var.h"                                            
+                                                                                
+                                                                                
+#include "/usr/src/sys/netpfil/pf/pf.h"                                         
+#include "/usr/src/sys/net/pfvar.h"                                             
+#include "/usr/src/sys/sys/eventhandler.h"   
+
+/*------------------------------------------------------------------------*/
+
+"""
+	h.write(start)
+
+if h is None:
+	h = open(out_h, "at")
+
+h.write('#include "%s"\n' % pos1[0].file)                                      
+
+with open("include.notes", "a") as ih:
+	ih.write("%s:%s:%s\n" % (pos1[0].file, macro_name, arg_type))
+	ih.close()
