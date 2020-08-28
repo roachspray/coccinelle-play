@@ -29,6 +29,7 @@ if os.path.exists(out_c) == False:
 #include <sys/param.h>
 #include <sys/lock.h>
 #include <sys/mutex.h>
+#include <sys/rwlock.h>
 #include "ding.h"
 
 int
@@ -57,6 +58,8 @@ e1 = "\t// %s %s:%s\n" % (macro_name, pos1[0].file, pos1[0].line)
 
 e2 = '\t%s printf("%s,%s,%%zu,%s,%s\\n", sizeof(%s));\n' %  \
   (comment_out, macro_name, ioctl_type, pos1[0].file, pos1[0].line, ioctl_type )
+#e2 = '\t%s printf("%s,%%s,%%zu,%%s,%u\\n", "%s", sizeof(%s), "%s");\n' %  \
+#  (comment_out, macro_name,   ioctl_type, ioctl_type, pos1[0].file, pos1[0].line )
  
 h.write(e1)
 h.write(e2)

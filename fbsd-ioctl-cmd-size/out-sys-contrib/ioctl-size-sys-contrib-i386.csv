@@ -1,0 +1,217 @@
+macro,type,size,file,line
+VCHIQ_IOC_AWAIT_COMPLETION,VCHIQ_AWAIT_COMPLETION_T,20,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,113
+VCHIQ_IOC_CREATE_SERVICE,VCHIQ_CREATE_SERVICE_T,28,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,104
+VCHIQ_IOC_DEQUEUE_MESSAGE,VCHIQ_DEQUEUE_MESSAGE_T,16,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,115
+VCHIQ_IOC_DUMP_PHYS_MEM,VCHIQ_DUMP_MEM_T,8,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,125
+VCHIQ_IOC_GET_CONFIG,VCHIQ_GET_CONFIG_T,8,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,118
+VCHIQ_IOC_QUEUE_BULK_RECEIVE,VCHIQ_QUEUE_BULK_TRANSFER_T,20,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,111
+VCHIQ_IOC_QUEUE_BULK_TRANSMIT,VCHIQ_QUEUE_BULK_TRANSFER_T,20,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,109
+VCHIQ_IOC_QUEUE_MESSAGE,VCHIQ_QUEUE_MESSAGE_T,12,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,107
+VCHIQ_IOC_SET_SERVICE_OPTION,VCHIQ_SET_SERVICE_OPTION_T,12,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,123
+SIOCADNAT,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,25
+SIOCADNAT,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,31
+SIOCGNATL,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,28
+SIOCGNATL,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,34
+SIOCGNATS,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,27
+SIOCGNATS,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,33
+SIOCPURGENAT,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,29
+SIOCPURGENAT,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,35
+SIOCRMNAT,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,26
+SIOCRMNAT,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,32
+SIOCADAFR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,42
+SIOCADAFR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,82
+SIOCADIFR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,49
+SIOCADIFR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,89
+SIOCAUTHR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,59
+SIOCAUTHR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,99
+SIOCAUTHW,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,58
+SIOCAUTHW,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,98
+SIOCFRZST,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,56
+SIOCFRZST,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,96
+SIOCFUNCL,struct ipfunc_resolve,44,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,68
+SIOCFUNCL,struct ipfunc_resolve,44,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,108
+SIOCGENITER,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,74
+SIOCGENITER,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,114
+SIOCGETFS,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,46
+SIOCGETFS,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,86
+SIOCGETLG,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,67
+SIOCGETLG,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,107
+SIOCGTABL,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,75
+SIOCGTABL,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,115
+SIOCGTQTAB,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,78
+SIOCGTQTAB,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,118
+SIOCINAFR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,52
+SIOCINAFR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,92
+SIOCINIFR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,53
+SIOCINIFR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,93
+SIOCIPFDELTOK,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,76
+SIOCIPFDELTOK,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,116
+SIOCIPFFB,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,48
+SIOCIPFFB,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,88
+SIOCIPFFL,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,47
+SIOCIPFFL,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,87
+SIOCIPFGET,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,70
+SIOCIPFGET,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,110
+SIOCIPFGETNEXT,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,69
+SIOCIPFGETNEXT,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,109
+SIOCIPFINTERROR,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,80
+SIOCIPFINTERROR,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,120
+SIOCIPFITER,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,73
+SIOCIPFITER,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,113
+SIOCIPFL6,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,72
+SIOCIPFL6,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,112
+SIOCIPFSET,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,71
+SIOCIPFSET,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,111
+SIOCLOOKUPITER,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,77
+SIOCLOOKUPITER,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,117
+SIOCMATCHFLUSH,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,79
+SIOCMATCHFLUSH,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,119
+SIOCRMAFR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,43
+SIOCRMAFR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,83
+SIOCRMIFR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,50
+SIOCRMIFR,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,90
+SIOCSETLG,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,66
+SIOCSETLG,int,4,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,106
+SIOCSTAT1,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,60
+SIOCSTAT1,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,100
+SIOCSTAT2,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,65
+SIOCSTAT2,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,105
+SIOCSTGET,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,63
+SIOCSTGET,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,103
+SIOCSTGSZ,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,64
+SIOCSTGSZ,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,104
+SIOCSTPUT,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,62
+SIOCSTPUT,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,102
+SIOCZRLST,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,57
+SIOCZRLST,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,97
+SIOCDELST,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_state.h,16
+SIOCDELST,struct ipfobj,52,12.1src/sys/contrib/ipfilter/netinet/ip_state.h,18
+SIOCADSCA,struct ipscan *,4,12.1src/sys/contrib/ipfilter/netinet/ip_scan.h,29
+SIOCADSCA,struct ipscan *,4,12.1src/sys/contrib/ipfilter/netinet/ip_scan.h,33
+SIOCGSCST,struct ipscan *,4,12.1src/sys/contrib/ipfilter/netinet/ip_scan.h,31
+SIOCGSCST,struct ipscan *,4,12.1src/sys/contrib/ipfilter/netinet/ip_scan.h,35
+SIOCRMSCA,struct ipscan *,4,12.1src/sys/contrib/ipfilter/netinet/ip_scan.h,30
+SIOCRMSCA,struct ipscan *,4,12.1src/sys/contrib/ipfilter/netinet/ip_scan.h,34
+SIOCLOOKUPADDNODE,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,17
+SIOCLOOKUPADDNODE,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,27
+SIOCLOOKUPADDNODEW,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,18
+SIOCLOOKUPADDNODEW,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,28
+SIOCLOOKUPADDTABLE,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,12
+SIOCLOOKUPADDTABLE,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,22
+SIOCLOOKUPDELNODE,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,19
+SIOCLOOKUPDELNODE,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,29
+SIOCLOOKUPDELNODEW,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,20
+SIOCLOOKUPDELNODEW,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,30
+SIOCLOOKUPDELTABLE,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,13
+SIOCLOOKUPDELTABLE,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,23
+SIOCLOOKUPFLUSH,struct iplookupflush,32,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,16
+SIOCLOOKUPFLUSH,struct iplookupflush,32,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,26
+SIOCLOOKUPSTAT,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,14
+SIOCLOOKUPSTAT,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,24
+SIOCLOOKUPSTATW,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,15
+SIOCLOOKUPSTATW,struct iplookupop,36,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,25
+SIOCPROXY,struct ap_control,52,12.1src/sys/contrib/ipfilter/netinet/ip_proxy.h,24
+SIOCPROXY,struct ap_control,52,12.1src/sys/contrib/ipfilter/netinet/ip_proxy.h,26
+VIDIOCCAPTURE,int,4,12.1src/sys/contrib/v4l/videodev.h,261
+VIDIOCGAUDIO,struct video_audio,40,12.1src/sys/contrib/v4l/videodev.h,269
+VIDIOCGCAP,struct video_capability,60,12.1src/sys/contrib/v4l/videodev.h,254
+VIDIOCGCAPTURE,struct video_capture,20,12.1src/sys/contrib/v4l/videodev.h,275
+VIDIOCGCHAN,struct video_channel,48,12.1src/sys/contrib/v4l/videodev.h,255
+VIDIOCGFBUF,struct video_buffer,20,12.1src/sys/contrib/v4l/videodev.h,264
+VIDIOCGFREQ,unsigned long,4,12.1src/sys/contrib/v4l/videodev.h,267
+VIDIOCGMBUF,struct video_mbuf,136,12.1src/sys/contrib/v4l/videodev.h,273
+VIDIOCGPICT,struct video_picture,14,12.1src/sys/contrib/v4l/videodev.h,259
+VIDIOCGPLAYINFO,struct video_info,280,12.1src/sys/contrib/v4l/videodev.h,279
+VIDIOCGTUNER,struct video_tuner,52,12.1src/sys/contrib/v4l/videodev.h,257
+VIDIOCGUNIT,struct video_unit,20,12.1src/sys/contrib/v4l/videodev.h,274
+VIDIOCGVBIFMT,struct vbi_format,32,12.1src/sys/contrib/v4l/videodev.h,281
+VIDIOCGWIN,struct video_window,32,12.1src/sys/contrib/v4l/videodev.h,262
+VIDIOCKEY,struct video_key,12,12.1src/sys/contrib/v4l/videodev.h,266
+VIDIOCMCAPTURE,struct video_mmap,16,12.1src/sys/contrib/v4l/videodev.h,272
+VIDIOCSAUDIO,struct video_audio,40,12.1src/sys/contrib/v4l/videodev.h,270
+VIDIOCSCAPTURE,struct video_capture,20,12.1src/sys/contrib/v4l/videodev.h,276
+VIDIOCSCHAN,struct video_channel,48,12.1src/sys/contrib/v4l/videodev.h,256
+VIDIOCSFBUF,struct video_buffer,20,12.1src/sys/contrib/v4l/videodev.h,265
+VIDIOCSFREQ,unsigned long,4,12.1src/sys/contrib/v4l/videodev.h,268
+VIDIOCSMICROCODE,struct video_code,24,12.1src/sys/contrib/v4l/videodev.h,280
+VIDIOCSPICT,struct video_picture,14,12.1src/sys/contrib/v4l/videodev.h,260
+VIDIOCSPLAYMODE,struct video_play_mode,12,12.1src/sys/contrib/v4l/videodev.h,277
+VIDIOCSTUNER,struct video_tuner,52,12.1src/sys/contrib/v4l/videodev.h,258
+VIDIOCSVBIFMT,struct vbi_format,32,12.1src/sys/contrib/v4l/videodev.h,282
+VIDIOCSWIN,struct video_window,32,12.1src/sys/contrib/v4l/videodev.h,263
+VIDIOCSWRITEMODE,int,4,12.1src/sys/contrib/v4l/videodev.h,278
+VIDIOCSYNC,int,4,12.1src/sys/contrib/v4l/videodev.h,271
+VIDIOC_CROPCAP,struct v4l2_cropcap,44,12.1src/sys/contrib/v4l/videodev2.h,1711
+VIDIOC_CROPCAP_OLD,struct v4l2_cropcap,44,12.1src/sys/contrib/v4l/videodev2.h,1765
+VIDIOC_DBG_G_CHIP_IDENT,struct v4l2_dbg_chip_ident,44,12.1src/sys/contrib/v4l/videodev2.h,1744
+VIDIOC_DBG_G_REGISTER,struct v4l2_dbg_register,56,12.1src/sys/contrib/v4l/videodev2.h,1740
+VIDIOC_DBG_S_REGISTER,struct v4l2_dbg_register,56,12.1src/sys/contrib/v4l/videodev2.h,1739
+VIDIOC_DQBUF,struct v4l2_buffer,68,12.1src/sys/contrib/v4l/videodev2.h,1683
+VIDIOC_ENCODER_CMD,struct v4l2_encoder_cmd,40,12.1src/sys/contrib/v4l/videodev2.h,1731
+VIDIOC_ENUMAUDIO,struct v4l2_audio,52,12.1src/sys/contrib/v4l/videodev2.h,1718
+VIDIOC_ENUMAUDOUT,struct v4l2_audioout,52,12.1src/sys/contrib/v4l/videodev2.h,1719
+VIDIOC_ENUMINPUT,struct v4l2_input,76,12.1src/sys/contrib/v4l/videodev2.h,1691
+VIDIOC_ENUMOUTPUT,struct v4l2_output,72,12.1src/sys/contrib/v4l/videodev2.h,1704
+VIDIOC_ENUMSTD,struct v4l2_standard,64,12.1src/sys/contrib/v4l/videodev2.h,1690
+VIDIOC_ENUM_DV_PRESETS,struct v4l2_dv_enum_preset,64,12.1src/sys/contrib/v4l/videodev2.h,1748
+VIDIOC_ENUM_FMT,struct v4l2_fmtdesc,64,12.1src/sys/contrib/v4l/videodev2.h,1674
+VIDIOC_ENUM_FRAMEINTERVALS,struct v4l2_frmivalenum,52,12.1src/sys/contrib/v4l/videodev2.h,1729
+VIDIOC_ENUM_FRAMESIZES,struct v4l2_frmsizeenum,44,12.1src/sys/contrib/v4l/videodev2.h,1728
+VIDIOC_G_AUDIO,struct v4l2_audio,52,12.1src/sys/contrib/v4l/videodev2.h,1696
+VIDIOC_G_AUDIO_OLD,struct v4l2_audio,52,12.1src/sys/contrib/v4l/videodev2.h,1763
+VIDIOC_G_AUDOUT,struct v4l2_audioout,52,12.1src/sys/contrib/v4l/videodev2.h,1705
+VIDIOC_G_AUDOUT_OLD,struct v4l2_audioout,52,12.1src/sys/contrib/v4l/videodev2.h,1764
+VIDIOC_G_CROP,struct v4l2_crop,20,12.1src/sys/contrib/v4l/videodev2.h,1712
+VIDIOC_G_CTRL,struct v4l2_control,8,12.1src/sys/contrib/v4l/videodev2.h,1692
+VIDIOC_G_DV_PRESET,struct v4l2_dv_preset,20,12.1src/sys/contrib/v4l/videodev2.h,1750
+VIDIOC_G_DV_TIMINGS,struct v4l2_dv_timings,132,12.1src/sys/contrib/v4l/videodev2.h,1753
+VIDIOC_G_ENC_INDEX,struct v4l2_enc_idx,2072,12.1src/sys/contrib/v4l/videodev2.h,1730
+VIDIOC_G_EXT_CTRLS,struct v4l2_ext_controls,24,12.1src/sys/contrib/v4l/videodev2.h,1724
+VIDIOC_G_FBUF,struct v4l2_framebuffer,44,12.1src/sys/contrib/v4l/videodev2.h,1679
+VIDIOC_G_FMT,struct v4l2_format,204,12.1src/sys/contrib/v4l/videodev2.h,1675
+VIDIOC_G_FREQUENCY,struct v4l2_frequency,44,12.1src/sys/contrib/v4l/videodev2.h,1709
+VIDIOC_G_INPUT,int,4,12.1src/sys/contrib/v4l/videodev2.h,1700
+VIDIOC_G_JPEGCOMP,struct v4l2_jpegcompression,140,12.1src/sys/contrib/v4l/videodev2.h,1714
+VIDIOC_G_MODULATOR,struct v4l2_modulator,68,12.1src/sys/contrib/v4l/videodev2.h,1707
+VIDIOC_G_OUTPUT,int,4,12.1src/sys/contrib/v4l/videodev2.h,1702
+VIDIOC_G_PARM,struct v4l2_streamparm,204,12.1src/sys/contrib/v4l/videodev2.h,1686
+VIDIOC_G_PRIORITY,enum v4l2_priority,4,12.1src/sys/contrib/v4l/videodev2.h,1720
+VIDIOC_G_SLICED_VBI_CAP,struct v4l2_sliced_vbi_cap,116,12.1src/sys/contrib/v4l/videodev2.h,1722
+VIDIOC_G_STD,v4l2_std_id,8,12.1src/sys/contrib/v4l/videodev2.h,1688
+VIDIOC_G_TUNER,struct v4l2_tuner,84,12.1src/sys/contrib/v4l/videodev2.h,1694
+VIDIOC_OVERLAY,int,4,12.1src/sys/contrib/v4l/videodev2.h,1681
+VIDIOC_OVERLAY_OLD,int,4,12.1src/sys/contrib/v4l/videodev2.h,1760
+VIDIOC_QBUF,struct v4l2_buffer,68,12.1src/sys/contrib/v4l/videodev2.h,1682
+VIDIOC_QUERYBUF,struct v4l2_buffer,68,12.1src/sys/contrib/v4l/videodev2.h,1678
+VIDIOC_QUERYCAP,struct v4l2_capability,104,12.1src/sys/contrib/v4l/videodev2.h,1672
+VIDIOC_QUERYCTRL,struct v4l2_queryctrl,68,12.1src/sys/contrib/v4l/videodev2.h,1698
+VIDIOC_QUERYMENU,struct v4l2_querymenu,44,12.1src/sys/contrib/v4l/videodev2.h,1699
+VIDIOC_QUERYSTD,v4l2_std_id,8,12.1src/sys/contrib/v4l/videodev2.h,1716
+VIDIOC_QUERY_DV_PRESET,struct v4l2_dv_preset,20,12.1src/sys/contrib/v4l/videodev2.h,1751
+VIDIOC_REQBUFS,struct v4l2_requestbuffers,20,12.1src/sys/contrib/v4l/videodev2.h,1677
+VIDIOC_STREAMOFF,int,4,12.1src/sys/contrib/v4l/videodev2.h,1685
+VIDIOC_STREAMON,int,4,12.1src/sys/contrib/v4l/videodev2.h,1684
+VIDIOC_S_AUDIO,struct v4l2_audio,52,12.1src/sys/contrib/v4l/videodev2.h,1697
+VIDIOC_S_AUDOUT,struct v4l2_audioout,52,12.1src/sys/contrib/v4l/videodev2.h,1706
+VIDIOC_S_CROP,struct v4l2_crop,20,12.1src/sys/contrib/v4l/videodev2.h,1713
+VIDIOC_S_CTRL,struct v4l2_control,8,12.1src/sys/contrib/v4l/videodev2.h,1693
+VIDIOC_S_CTRL_OLD,struct v4l2_control,8,12.1src/sys/contrib/v4l/videodev2.h,1762
+VIDIOC_S_DV_PRESET,struct v4l2_dv_preset,20,12.1src/sys/contrib/v4l/videodev2.h,1749
+VIDIOC_S_DV_TIMINGS,struct v4l2_dv_timings,132,12.1src/sys/contrib/v4l/videodev2.h,1752
+VIDIOC_S_EXT_CTRLS,struct v4l2_ext_controls,24,12.1src/sys/contrib/v4l/videodev2.h,1725
+VIDIOC_S_FBUF,struct v4l2_framebuffer,44,12.1src/sys/contrib/v4l/videodev2.h,1680
+VIDIOC_S_FMT,struct v4l2_format,204,12.1src/sys/contrib/v4l/videodev2.h,1676
+VIDIOC_S_FREQUENCY,struct v4l2_frequency,44,12.1src/sys/contrib/v4l/videodev2.h,1710
+VIDIOC_S_HW_FREQ_SEEK,struct v4l2_hw_freq_seek,48,12.1src/sys/contrib/v4l/videodev2.h,1747
+VIDIOC_S_INPUT,int,4,12.1src/sys/contrib/v4l/videodev2.h,1701
+VIDIOC_S_JPEGCOMP,struct v4l2_jpegcompression,140,12.1src/sys/contrib/v4l/videodev2.h,1715
+VIDIOC_S_MODULATOR,struct v4l2_modulator,68,12.1src/sys/contrib/v4l/videodev2.h,1708
+VIDIOC_S_OUTPUT,int,4,12.1src/sys/contrib/v4l/videodev2.h,1703
+VIDIOC_S_PARM,struct v4l2_streamparm,204,12.1src/sys/contrib/v4l/videodev2.h,1687
+VIDIOC_S_PARM_OLD,struct v4l2_streamparm,204,12.1src/sys/contrib/v4l/videodev2.h,1761
+VIDIOC_S_PRIORITY,enum v4l2_priority,4,12.1src/sys/contrib/v4l/videodev2.h,1721
+VIDIOC_S_STD,v4l2_std_id,8,12.1src/sys/contrib/v4l/videodev2.h,1689
+VIDIOC_S_TUNER,struct v4l2_tuner,84,12.1src/sys/contrib/v4l/videodev2.h,1695
+VIDIOC_TRY_ENCODER_CMD,struct v4l2_encoder_cmd,40,12.1src/sys/contrib/v4l/videodev2.h,1732
+VIDIOC_TRY_EXT_CTRLS,struct v4l2_ext_controls,24,12.1src/sys/contrib/v4l/videodev2.h,1726
+VIDIOC_TRY_FMT,struct v4l2_format,204,12.1src/sys/contrib/v4l/videodev2.h,1717

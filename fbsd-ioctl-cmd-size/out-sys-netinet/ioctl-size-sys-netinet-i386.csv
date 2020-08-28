@@ -1,0 +1,5 @@
+macro,type,size,file,line
+SIOCGVH,struct ifreq,32,12.1src/sys/netinet/ip_carp.h,138
+SIOCSVH,struct ifreq,32,12.1src/sys/netinet/ip_carp.h,137
+NETDUMPGCONF,struct netdump_conf,104,12.1src/sys/netinet/netdump/netdump.h,73
+NETDUMPSCONF,struct netdump_conf,104,12.1src/sys/netinet/netdump/netdump.h,74

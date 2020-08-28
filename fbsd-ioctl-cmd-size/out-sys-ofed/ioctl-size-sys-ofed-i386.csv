@@ -1,0 +1,4 @@
+macro,type,size,file,line
+IB_USER_MAD_REGISTER_AGENT,struct ib_user_mad_reg_req,28,12.1src/sys/ofed/include/uapi/rdma/ib_user_mad.h,245
+IB_USER_MAD_REGISTER_AGENT2,struct ib_user_mad_reg_req2,40,12.1src/sys/ofed/include/uapi/rdma/ib_user_mad.h,252
+IB_USER_MAD_UNREGISTER_AGENT,__u32,4,12.1src/sys/ofed/include/uapi/rdma/ib_user_mad.h,247
