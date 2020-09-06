@@ -33,9 +33,13 @@
 
 /*------------------------------------------------------------------------*/
 
-#include "/usr/src/sys/netinet/ip_carp.h"
-#include "/usr/src/sys/netinet/ip_carp.h"
-#include "/usr/src/sys/netinet/netdump/netdump.h"
-#include "/usr/src/sys/netinet/netdump/netdump.h"
+#include "/usr/src/sys/netsmb/smb_dev.h"
+#include "/usr/src/sys/netsmb/smb_dev.h"
+#include "/usr/src/sys/netsmb/smb_dev.h"
+#include "/usr/src/sys/netsmb/smb_dev.h"
+#include "/usr/src/sys/netsmb/smb_dev.h"
+#include "/usr/src/sys/netsmb/smb_dev.h"
+#include "/usr/src/sys/netsmb/smb_dev.h"
+#include "/usr/src/sys/netsmb/smb_dev.h"
 
 #endif //!_DING_H

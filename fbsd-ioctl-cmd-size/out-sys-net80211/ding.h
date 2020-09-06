@@ -33,9 +33,8 @@
 
 /*------------------------------------------------------------------------*/
 
-#include "/usr/src/sys/netinet/ip_carp.h"
-#include "/usr/src/sys/netinet/ip_carp.h"
-#include "/usr/src/sys/netinet/netdump/netdump.h"
-#include "/usr/src/sys/netinet/netdump/netdump.h"
+#include "/usr/src/sys/net80211/ieee80211_ioctl.h"
+#include "/usr/src/sys/net80211/ieee80211_ioctl.h"
+#include "/usr/src/sys/net80211/ieee80211_ioctl.h"
 
 #endif //!_DING_H

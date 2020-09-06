@@ -1,0 +1,11 @@
+macro,type,size,file,line
+CIOCASYMFEAT,u_int32_t,4,12.1src/sys/opencrypto/cryptodev.h,345
+CIOCCRYPT,struct crypt_op,48,12.1src/sys/opencrypto/cryptodev.h,343
+CIOCCRYPTAEAD,struct crypt_aead,64,12.1src/sys/opencrypto/cryptodev.h,349
+CIOCFINDDEV,struct crypt_find_op,36,12.1src/sys/opencrypto/cryptodev.h,348
+CIOCFSESSION,u_int32_t,4,12.1src/sys/opencrypto/cryptodev.h,342
+CIOCGSESSION,struct session_op,48,12.1src/sys/opencrypto/cryptodev.h,341
+CIOCGSESSION2,struct session2_op,64,12.1src/sys/opencrypto/cryptodev.h,346
+CIOCKEY,struct crypt_kop,144,12.1src/sys/opencrypto/cryptodev.h,344
+CIOCKEY2,struct crypt_kop,144,12.1src/sys/opencrypto/cryptodev.h,347
+CRIOGET,u_int32_t,4,12.1src/sys/opencrypto/cryptodev.h,336

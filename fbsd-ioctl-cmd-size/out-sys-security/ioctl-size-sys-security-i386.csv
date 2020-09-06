@@ -1,0 +1,10 @@
+macro,type,size,file,line
+AUDITPIPE_DELETE_PRESELECT_AUID,au_id_t,4,12.1src/sys/security/audit/audit_ioctl.h,70
+AUDITPIPE_GET_PRESELECT_AUID,struct auditpipe_ioctl_preselect,12,12.1src/sys/security/audit/audit_ioctl.h,67
+AUDITPIPE_GET_PRESELECT_FLAGS,au_mask_t,8,12.1src/sys/security/audit/audit_ioctl.h,62
+AUDITPIPE_GET_PRESELECT_MODE,int,4,12.1src/sys/security/audit/audit_ioctl.h,72
+AUDITPIPE_GET_PRESELECT_NAFLAGS,au_mask_t,8,12.1src/sys/security/audit/audit_ioctl.h,64
+AUDITPIPE_SET_PRESELECT_AUID,struct auditpipe_ioctl_preselect,12,12.1src/sys/security/audit/audit_ioctl.h,69
+AUDITPIPE_SET_PRESELECT_FLAGS,au_mask_t,8,12.1src/sys/security/audit/audit_ioctl.h,63
+AUDITPIPE_SET_PRESELECT_MODE,int,4,12.1src/sys/security/audit/audit_ioctl.h,73
+AUDITPIPE_SET_PRESELECT_NAFLAGS,au_mask_t,8,12.1src/sys/security/audit/audit_ioctl.h,65

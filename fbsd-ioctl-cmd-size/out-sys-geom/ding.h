@@ -33,9 +33,12 @@
 
 /*------------------------------------------------------------------------*/
 
-#include "/usr/src/sys/netinet/ip_carp.h"
-#include "/usr/src/sys/netinet/ip_carp.h"
-#include "/usr/src/sys/netinet/netdump/netdump.h"
-#include "/usr/src/sys/netinet/netdump/netdump.h"
+#include "/usr/src/sys/geom/geom_ctl.h"
+#include "/usr/src/sys/geom/gate/g_gate.h"
+#include "/usr/src/sys/geom/gate/g_gate.h"
+#include "/usr/src/sys/geom/gate/g_gate.h"
+#include "/usr/src/sys/geom/gate/g_gate.h"
+#include "/usr/src/sys/geom/gate/g_gate.h"
+#include "/usr/src/sys/geom/gate/g_gate.h"
 
 #endif //!_DING_H

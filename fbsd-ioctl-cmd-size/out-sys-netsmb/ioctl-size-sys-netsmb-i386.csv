@@ -1,0 +1,9 @@
+macro,type,size,file,line
+SMBIOC_LOOKUP,struct smbioc_lookup,764,12.1src/sys/netsmb/smb_dev.h,149
+SMBIOC_OPENSESSION,struct smbioc_ossn,476,12.1src/sys/netsmb/smb_dev.h,144
+SMBIOC_OPENSHARE,struct smbioc_oshare,280,12.1src/sys/netsmb/smb_dev.h,145
+SMBIOC_READ,struct smbioc_rw,20,12.1src/sys/netsmb/smb_dev.h,150
+SMBIOC_REQUEST,struct smbioc_rq,36,12.1src/sys/netsmb/smb_dev.h,146
+SMBIOC_SETFLAGS,struct smbioc_flags,12,12.1src/sys/netsmb/smb_dev.h,148
+SMBIOC_T2RQ,struct smbioc_t2rq,48,12.1src/sys/netsmb/smb_dev.h,147
+SMBIOC_WRITE,struct smbioc_rw,20,12.1src/sys/netsmb/smb_dev.h,151

@@ -1,0 +1,39 @@
+macro,type,size,file,line
+AUTOFSDONE,struct autofs_daemon_done,40,12.1src/sys/fs/autofs/autofs_ioctl.h,116
+AUTOFSDONE101,struct autofs_daemon_done_101,8,12.1src/sys/fs/autofs/autofs_ioctl.h,115
+AUTOFSREQUEST,struct autofs_daemon_request,5124,12.1src/sys/fs/autofs/autofs_ioctl.h,114
+NANDFS_IOCTL_CHANGE_CPMODE,struct nandfs_cpmode,16,12.1src/sys/fs/nandfs/nandfs_fs.h,555
+NANDFS_IOCTL_DELETE_CP,uint64_t [ 2 ],16,12.1src/sys/fs/nandfs/nandfs_fs.h,557
+NANDFS_IOCTL_DELETE_SNAP,uint64_t,8,12.1src/sys/fs/nandfs/nandfs_fs.h,564
+NANDFS_IOCTL_GET_BDESCS,struct nandfs_argv,24,12.1src/sys/fs/nandfs/nandfs_fs.h,561
+NANDFS_IOCTL_GET_CPINFO,struct nandfs_argv,24,12.1src/sys/fs/nandfs/nandfs_fs.h,556
+NANDFS_IOCTL_GET_CPSTAT,struct nandfs_cpstat,24,12.1src/sys/fs/nandfs/nandfs_fs.h,558
+NANDFS_IOCTL_GET_FSINFO,struct nandfs_fsinfo,1792,12.1src/sys/fs/nandfs/nandfs_fs.h,562
+NANDFS_IOCTL_GET_SUINFO,struct nandfs_argv,24,12.1src/sys/fs/nandfs/nandfs_fs.h,559
+NANDFS_IOCTL_GET_SUSTAT,struct nandfs_seg_stat,48,12.1src/sys/fs/nandfs/nandfs_fs.h,554
+NANDFS_IOCTL_GET_VINFO,struct nandfs_argv,24,12.1src/sys/fs/nandfs/nandfs_fs.h,560
+NANDFS_IOCTL_MAKE_SNAP,uint64_t,8,12.1src/sys/fs/nandfs/nandfs_fs.h,563
+NANDFS_IOCTL_SYNC,uint64_t,8,12.1src/sys/fs/nandfs/nandfs_fs.h,565
+CUSE_IOCTL_ALLOC_MEMORY,struct cuse_alloc_info,8,12.1src/sys/fs/cuse/cuse_ioctl.h,78
+CUSE_IOCTL_ALLOC_UNIT,int,4,12.1src/sys/fs/cuse/cuse_ioctl.h,83
+CUSE_IOCTL_ALLOC_UNIT_BY_ID,int,4,12.1src/sys/fs/cuse/cuse_ioctl.h,86
+CUSE_IOCTL_CREATE_DEV,struct cuse_create_dev,96,12.1src/sys/fs/cuse/cuse_ioctl.h,81
+CUSE_IOCTL_DESTROY_DEV,struct cuse_dev *,4,12.1src/sys/fs/cuse/cuse_ioctl.h,82
+CUSE_IOCTL_FREE_MEMORY,struct cuse_alloc_info,8,12.1src/sys/fs/cuse/cuse_ioctl.h,79
+CUSE_IOCTL_FREE_UNIT,int,4,12.1src/sys/fs/cuse/cuse_ioctl.h,84
+CUSE_IOCTL_FREE_UNIT_BY_ID,int,4,12.1src/sys/fs/cuse/cuse_ioctl.h,87
+CUSE_IOCTL_GET_COMMAND,struct cuse_command,24,12.1src/sys/fs/cuse/cuse_ioctl.h,73
+CUSE_IOCTL_GET_SIG,int,4,12.1src/sys/fs/cuse/cuse_ioctl.h,77
+CUSE_IOCTL_READ_DATA,struct cuse_data_chunk,12,12.1src/sys/fs/cuse/cuse_ioctl.h,75
+CUSE_IOCTL_SELWAKEUP,int,4,12.1src/sys/fs/cuse/cuse_ioctl.h,85
+CUSE_IOCTL_SET_PFH,uintptr_t,4,12.1src/sys/fs/cuse/cuse_ioctl.h,80
+CUSE_IOCTL_SYNC_COMMAND,int,4,12.1src/sys/fs/cuse/cuse_ioctl.h,76
+CUSE_IOCTL_WRITE_DATA,struct cuse_data_chunk,12,12.1src/sys/fs/cuse/cuse_ioctl.h,74
+DEVFSIO_RADD,struct devfs_rule,236,12.1src/sys/fs/devfs/devfs.h,109
+DEVFSIO_RAPPLY,struct devfs_rule,236,12.1src/sys/fs/devfs/devfs.h,111
+DEVFSIO_RAPPLYID,devfs_rid,4,12.1src/sys/fs/devfs/devfs.h,112
+DEVFSIO_RDEL,devfs_rid,4,12.1src/sys/fs/devfs/devfs.h,110
+DEVFSIO_RGETNEXT,struct devfs_rule,236,12.1src/sys/fs/devfs/devfs.h,113
+DEVFSIO_SAPPLY,devfs_rsnum,2,12.1src/sys/fs/devfs/devfs.h,116
+DEVFSIO_SGETNEXT,devfs_rsnum,2,12.1src/sys/fs/devfs/devfs.h,117
+DEVFSIO_SUSE,devfs_rsnum,2,12.1src/sys/fs/devfs/devfs.h,115

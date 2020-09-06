@@ -33,9 +33,18 @@
 
 /*------------------------------------------------------------------------*/
 
-#include "/usr/src/sys/netinet/ip_carp.h"
-#include "/usr/src/sys/netinet/ip_carp.h"
-#include "/usr/src/sys/netinet/netdump/netdump.h"
-#include "/usr/src/sys/netinet/netdump/netdump.h"
+#include "/usr/src/sys/xen/gntdev.h"
+#include "/usr/src/sys/xen/gntdev.h"
+#include "/usr/src/sys/xen/gntdev.h"
+#include "/usr/src/sys/xen/gntdev.h"
+#include "/usr/src/sys/xen/gntdev.h"
+#include "/usr/src/sys/xen/gntdev.h"
+#include "/usr/src/sys/xen/evtchn.h"
+#include "/usr/src/sys/xen/evtchn.h"
+#include "/usr/src/sys/xen/evtchn.h"
+#include "/usr/src/sys/xen/evtchn.h"
+#include "/usr/src/sys/xen/evtchn.h"
+#include "/usr/src/sys/xen/privcmd.h"
+#include "/usr/src/sys/xen/privcmd.h"
 
 #endif //!_DING_H

@@ -22,6 +22,15 @@
 #include "/usr/src/sys/sys/pciio.h"
 #define MNAMELEN 1024
 #include "/usr/src/sys/fs/nandfs/nandfs_fs.h"
+
+#include "/usr/src/sys/geom/geom.h"
+
+#include "/usr/src/sys/netinet6/ip6_mroute.h"                                   
+#include "/usr/src/sys/netinet6/in6_var.h"                                      
+#include "/usr/src/sys/netinet6/nd6.h"
+#include "/usr/src/sys/xen/xen-os.h"
+#include "/usr/src/sys/xen/interface/xen.h"
+
 /*------------------------------------------------------------------------*/
 
 #include "/usr/src/sys/fs/autofs/autofs_ioctl.h"

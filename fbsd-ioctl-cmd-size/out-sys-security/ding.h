@@ -33,9 +33,14 @@
 
 /*------------------------------------------------------------------------*/
 
-#include "/usr/src/sys/netinet/ip_carp.h"
-#include "/usr/src/sys/netinet/ip_carp.h"
-#include "/usr/src/sys/netinet/netdump/netdump.h"
-#include "/usr/src/sys/netinet/netdump/netdump.h"
+#include "/usr/src/sys/security/audit/audit_ioctl.h"
+#include "/usr/src/sys/security/audit/audit_ioctl.h"
+#include "/usr/src/sys/security/audit/audit_ioctl.h"
+#include "/usr/src/sys/security/audit/audit_ioctl.h"
+#include "/usr/src/sys/security/audit/audit_ioctl.h"
+#include "/usr/src/sys/security/audit/audit_ioctl.h"
+#include "/usr/src/sys/security/audit/audit_ioctl.h"
+#include "/usr/src/sys/security/audit/audit_ioctl.h"
+#include "/usr/src/sys/security/audit/audit_ioctl.h"
 
 #endif //!_DING_H

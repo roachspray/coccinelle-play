@@ -1,0 +1,4 @@
+macro,type,size,file,line
+SIOCG80211,struct ieee80211req,32,12.1src/sys/net80211/ieee80211_ioctl.h,601
+SIOCG80211STATS,struct ifreq,32,12.1src/sys/net80211/ieee80211_ioctl.h,602
+SIOCS80211,struct ieee80211req,32,12.1src/sys/net80211/ieee80211_ioctl.h,600
