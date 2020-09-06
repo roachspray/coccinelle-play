@@ -1,6 +1,0 @@
-macro,type,size,file,line
-FIODGNAME_32,struct fiodgname_arg32,8,12.1src/sys/compat/freebsd32/freebsd32_ioctl.h,63
-MEMRANGE_GET32,struct mem_range_op32,12,12.1src/sys/compat/freebsd32/freebsd32_ioctl.h,64
-MEMRANGE_SET32,struct mem_range_op32,12,12.1src/sys/compat/freebsd32/freebsd32_ioctl.h,65
-PCIOCBARMMAP_32,struct pci_bar_mmap32,40,12.1src/sys/compat/freebsd32/freebsd32_ioctl.h,67
-SG_IO_32,struct sg_io_hdr32,64,12.1src/sys/compat/freebsd32/freebsd32_ioctl.h,66
