@@ -36,8 +36,11 @@ if os.path.exists(out_h) == False:
 #include "/usr/src/sys/netinet/in.h"                                            
 #include "/usr/src/sys/net/if.h"                                                
 #include "/usr/src/sys/net/if_var.h"                                            
+#include "/usr/src/sys/netinet/ip_mroute.h"
 
-#include "/usr/src/sys/contrib/ipfilter/netinet/ip_fil.h"                                                                                
+#ifndef	USING_CDDL
+#include "/usr/src/sys/contrib/ipfilter/netinet/ip_fil.h"
+#endif
 #include "/usr/src/sys/netpfil/pf/pf.h"                                         
 #include "/usr/src/sys/net/pfvar.h"                                             
 #include "/usr/src/sys/sys/eventhandler.h"   
@@ -47,6 +50,11 @@ if os.path.exists(out_h) == False:
 #include "/usr/src/sys/cam/ctl/ctl_io.h"
 
 #include "/usr/src/sys/sys/pciio.h"
+
+#include "/usr/src/sys/dev/aac/aacreg.h"
+
+#include "/usr/src/sys/sys/_termios.h"
+#include "/usr/src/sys/sys/fbio.h"
 /*------------------------------------------------------------------------*/
 
 """

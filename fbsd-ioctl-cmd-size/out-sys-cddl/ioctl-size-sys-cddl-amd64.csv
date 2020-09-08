@@ -1,0 +1,16 @@
+macro,type,size,file,line
+DTRACEHIOC_REMOVE,int,4,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1416
+DTRACEIOC_AGGDESC,dtrace_aggdesc_t *,8,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1326
+DTRACEIOC_AGGSNAP,dtrace_bufdesc_t *,8,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1312
+DTRACEIOC_BUFSNAP,dtrace_bufdesc_t *,8,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1302
+DTRACEIOC_CONF,dtrace_conf_t,48,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1318
+DTRACEIOC_DOFGET,dof_hdr_t *,8,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1330
+DTRACEIOC_ENABLE,dtrace_enable_io_t,16,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1310
+DTRACEIOC_EPROBE,dtrace_eprobedesc_t,56,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1314
+DTRACEIOC_FORMAT,dtrace_fmtdesc_t,16,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1328
+DTRACEIOC_PROBEARG,dtrace_argdesc_t,268,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1316
+DTRACEIOC_PROBEMATCH,dtrace_probedesc_t,388,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1304
+DTRACEIOC_PROBES,dtrace_probedesc_t,388,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1300
+DTRACEIOC_PROVIDER,dtrace_providerdesc_t,96,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1298
+DTRACEIOC_REPLICATE,dtrace_repldesc_t,776,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1332
+DTRACEIOC_STATUS,dtrace_status_t,88,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1320

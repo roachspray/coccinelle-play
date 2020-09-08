@@ -10,7 +10,13 @@
 #include "/usr/src/sys/net/if.h"                                                
 #include "/usr/src/sys/net/if_var.h"                                            
 
-#include "/usr/src/sys/contrib/ipfilter/netinet/ip_fil.h"                                                                                
+//#include sys/param.h>
+//#include <sys/lock.h>
+#include "/usr/src/sys/sys/rwlock.h"
+#ifndef	USING_CDDL
+#include "/usr/src/sys/contrib/ipfilter/netinet/ip_fil.h"
+#endif
+
 #include "/usr/src/sys/netpfil/pf/pf.h"                                         
 #include "/usr/src/sys/net/pfvar.h"                                             
 #include "/usr/src/sys/sys/eventhandler.h"   

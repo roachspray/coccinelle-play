@@ -1,0 +1,510 @@
+macro,type,size,file,line
+OSIOCAIFADDR,struct oifaliasreq,64,12.1src/sys/sys/sockio.h,73
+SIOCADDMULTI,struct ifreq,32,12.1src/sys/sys/sockio.h,87
+SIOCAIFADDR,struct ifaliasreq,68,12.1src/sys/sys/sockio.h,85
+SIOCAIFGROUP,struct ifgroupreq,36,12.1src/sys/sys/sockio.h,133
+SIOCATMARK,int,4,12.1src/sys/sys/sockio.h,45
+SIOCDELMULTI,struct ifreq,32,12.1src/sys/sys/sockio.h,88
+SIOCDIFADDR,struct ifreq,32,12.1src/sys/sys/sockio.h,72
+SIOCDIFGROUP,struct ifgroupreq,36,12.1src/sys/sys/sockio.h,135
+SIOCDIFPHYADDR,struct ifreq,32,12.1src/sys/sys/sockio.h,107
+SIOCGDRVSPEC,struct ifdrv,28,12.1src/sys/sys/sockio.h,125
+SIOCGETSGCNT,struct sioc_sg_req,20,12.1src/sys/sys/sockio.h,52
+SIOCGETVIFCNT,struct sioc_vif_req,20,12.1src/sys/sys/sockio.h,51
+SIOCGHIWAT,int,4,12.1src/sys/sys/sockio.h,42
+SIOCGHWADDR,struct ifreq,32,12.1src/sys/sys/sockio.h,102
+SIOCGI2C,struct ifreq,32,12.1src/sys/sys/sockio.h,101
+SIOCGIFADDR,struct ifreq,32,12.1src/sys/sys/sockio.h,56
+SIOCGIFBRDADDR,struct ifreq,32,12.1src/sys/sys/sockio.h,63
+SIOCGIFCAP,struct ifreq,32,12.1src/sys/sys/sockio.h,78
+SIOCGIFCONF,struct ifconf,8,12.1src/sys/sys/sockio.h,66
+SIOCGIFDESCR,struct ifreq,32,12.1src/sys/sys/sockio.h,84
+SIOCGIFDSTADDR,struct ifreq,32,12.1src/sys/sys/sockio.h,59
+SIOCGIFFIB,struct ifreq,32,12.1src/sys/sys/sockio.h,117
+SIOCGIFFLAGS,struct ifreq,32,12.1src/sys/sys/sockio.h,61
+SIOCGIFGENERIC,struct ifreq,32,12.1src/sys/sys/sockio.h,97
+SIOCGIFGMEMB,struct ifgroupreq,36,12.1src/sys/sys/sockio.h,136
+SIOCGIFGROUP,struct ifgroupreq,36,12.1src/sys/sys/sockio.h,134
+SIOCGIFINDEX,struct ifreq,32,12.1src/sys/sys/sockio.h,79
+SIOCGIFMAC,struct ifreq,32,12.1src/sys/sys/sockio.h,80
+SIOCGIFMEDIA,struct ifmediareq,40,12.1src/sys/sys/sockio.h,94
+SIOCGIFMETRIC,struct ifreq,32,12.1src/sys/sys/sockio.h,70
+SIOCGIFMTU,struct ifreq,32,12.1src/sys/sys/sockio.h,89
+SIOCGIFNETMASK,struct ifreq,32,12.1src/sys/sys/sockio.h,68
+SIOCGIFPDSTADDR,struct ifreq,32,12.1src/sys/sys/sockio.h,106
+SIOCGIFPHYS,struct ifreq,32,12.1src/sys/sys/sockio.h,91
+SIOCGIFPSRCADDR,struct ifreq,32,12.1src/sys/sys/sockio.h,105
+SIOCGIFRSSHASH,struct ifrsshash,24,12.1src/sys/sys/sockio.h,140
+SIOCGIFRSSKEY,struct ifrsskey,148,12.1src/sys/sys/sockio.h,139
+SIOCGIFSTATUS,struct ifstat,817,12.1src/sys/sys/sockio.h,99
+SIOCGIFXMEDIA,struct ifmediareq,40,12.1src/sys/sys/sockio.h,137
+SIOCGLANPCP,struct ifreq,32,12.1src/sys/sys/sockio.h,143
+SIOCGLOWAT,int,4,12.1src/sys/sys/sockio.h,44
+SIOCGPGRP,int,4,12.1src/sys/sys/sockio.h,47
+SIOCGPRIVATE_0,struct ifreq,32,12.1src/sys/sys/sockio.h,111
+SIOCGPRIVATE_1,struct ifreq,32,12.1src/sys/sys/sockio.h,112
+SIOCGTUNFIB,struct ifreq,32,12.1src/sys/sys/sockio.h,120
+SIOCIFCREATE,struct ifreq,32,12.1src/sys/sys/sockio.h,128
+SIOCIFCREATE2,struct ifreq,32,12.1src/sys/sys/sockio.h,129
+SIOCIFDESTROY,struct ifreq,32,12.1src/sys/sys/sockio.h,130
+SIOCIFGCLONERS,struct if_clonereq,12,12.1src/sys/sys/sockio.h,131
+SIOCSDRVSPEC,struct ifdrv,28,12.1src/sys/sys/sockio.h,123
+SIOCSHIWAT,int,4,12.1src/sys/sys/sockio.h,41
+SIOCSIFADDR,struct ifreq,32,12.1src/sys/sys/sockio.h,54
+SIOCSIFBRDADDR,struct ifreq,32,12.1src/sys/sys/sockio.h,64
+SIOCSIFCAP,struct ifreq,32,12.1src/sys/sys/sockio.h,77
+SIOCSIFDESCR,struct ifreq,32,12.1src/sys/sys/sockio.h,83
+SIOCSIFDSTADDR,struct ifreq,32,12.1src/sys/sys/sockio.h,57
+SIOCSIFFIB,struct ifreq,32,12.1src/sys/sys/sockio.h,118
+SIOCSIFFLAGS,struct ifreq,32,12.1src/sys/sys/sockio.h,60
+SIOCSIFGENERIC,struct ifreq,32,12.1src/sys/sys/sockio.h,96
+SIOCSIFLLADDR,struct ifreq,32,12.1src/sys/sys/sockio.h,100
+SIOCSIFMAC,struct ifreq,32,12.1src/sys/sys/sockio.h,81
+SIOCSIFMEDIA,struct ifreq,32,12.1src/sys/sys/sockio.h,93
+SIOCSIFMETRIC,struct ifreq,32,12.1src/sys/sys/sockio.h,71
+SIOCSIFMTU,struct ifreq,32,12.1src/sys/sys/sockio.h,90
+SIOCSIFNAME,struct ifreq,32,12.1src/sys/sys/sockio.h,82
+SIOCSIFNETMASK,struct ifreq,32,12.1src/sys/sys/sockio.h,69
+SIOCSIFPHYADDR,struct ifaliasreq,68,12.1src/sys/sys/sockio.h,104
+SIOCSIFPHYS,struct ifreq,32,12.1src/sys/sys/sockio.h,92
+SIOCSIFRVNET,struct ifreq,32,12.1src/sys/sys/sockio.h,115
+SIOCSIFVNET,struct ifreq,32,12.1src/sys/sys/sockio.h,114
+SIOCSLANPCP,struct ifreq,32,12.1src/sys/sys/sockio.h,144
+SIOCSLOWAT,int,4,12.1src/sys/sys/sockio.h,43
+SIOCSPGRP,int,4,12.1src/sys/sys/sockio.h,46
+SIOCSTUNFIB,struct ifreq,32,12.1src/sys/sys/sockio.h,121
+GPIOACCESS32,struct gpio_access_32,16,12.1src/sys/sys/gpio.h,176
+GPIOCONFIG32,struct gpio_config_32,136,12.1src/sys/sys/gpio.h,177
+GPIOGET,struct gpio_req,8,12.1src/sys/sys/gpio.h,172
+GPIOGETCONFIG,struct gpio_pin,76,12.1src/sys/sys/gpio.h,170
+GPIOMAXPIN,int,4,12.1src/sys/sys/gpio.h,169
+GPIOSET,struct gpio_req,8,12.1src/sys/sys/gpio.h,173
+GPIOSETCONFIG,struct gpio_pin,76,12.1src/sys/sys/gpio.h,171
+GPIOSETNAME,struct gpio_pin,76,12.1src/sys/sys/gpio.h,175
+GPIOTOGGLE,struct gpio_req,8,12.1src/sys/sys/gpio.h,174
+CDIOCCAPABILITY,struct ioc_capability,12,12.1src/sys/sys/cdio.h,275
+CDIOCGETVOL,struct ioc_vol,4,12.1src/sys/sys/cdio.h,182
+CDIOCPITCH,struct ioc_pitch,2,12.1src/sys/sys/cdio.h,240
+CDIOCPLAYBLOCKS,struct ioc_play_blocks,8,12.1src/sys/sys/cdio.h,129
+CDIOCPLAYMSF,struct ioc_play_msf,6,12.1src/sys/sys/cdio.h,222
+CDIOCPLAYTRACKS,struct ioc_play_track,4,12.1src/sys/sys/cdio.h,122
+CDIOCREADSUBCHANNEL,struct ioc_read_subchannel,12,12.1src/sys/sys/cdio.h,145
+CDIOCSETPATCH,struct ioc_patch,4,12.1src/sys/sys/cdio.h,176
+CDIOCSETVOL,struct ioc_vol,4,12.1src/sys/sys/cdio.h,184
+CDIOREADTOCENTRY,struct ioc_read_toc_single_entry,12,12.1src/sys/sys/cdio.h,170
+CDIOREADTOCENTRYS,struct ioc_read_toc_entry,8,12.1src/sys/sys/cdio.h,162
+CDIOREADTOCHEADER,struct ioc_toc_header,4,12.1src/sys/sys/cdio.h,153
+CONS_BELLTYPE,int,4,12.1src/sys/sys/consio.h,122
+CONS_BLANKTIME,int,4,12.1src/sys/sys/consio.h,94
+CONS_CURRENT,int,4,12.1src/sys/sys/consio.h,85
+CONS_CURRENTADP,int,4,12.1src/sys/sys/consio.h,280
+CONS_CURSORTYPE,int,4,12.1src/sys/sys/consio.h,117
+CONS_GET,int,4,12.1src/sys/sys/consio.h,88
+CONS_GETCURSORSHAPE,struct cshape,12,12.1src/sys/sys/consio.h,202
+CONS_GETINFO,vid_info_t,24,12.1src/sys/sys/consio.h,274
+CONS_GETTERM,term_info_t,104,12.1src/sys/sys/consio.h,324
+CONS_GETVERS,int,4,12.1src/sys/sys/consio.h,277
+CONS_GSAVER,ssaver_t,24,12.1src/sys/sys/consio.h,106
+CONS_HISTORY,int,4,12.1src/sys/sys/consio.h,125
+CONS_IDLE,int,4,12.1src/sys/sys/consio.h,175
+CONS_MOUSECTL,mouse_info_t,20,12.1src/sys/sys/consio.h,172
+CONS_SAVERMODE,int,4,12.1src/sys/sys/consio.h,181
+CONS_SAVERSTART,int,4,12.1src/sys/sys/consio.h,184
+CONS_SCRSHOT,scrshot_t,20,12.1src/sys/sys/consio.h,310
+CONS_SETCURSORSHAPE,struct cshape,12,12.1src/sys/sys/consio.h,203
+CONS_SETTERM,term_info_t,104,12.1src/sys/sys/consio.h,325
+CONS_SSAVER,ssaver_t,24,12.1src/sys/sys/consio.h,105
+GIO_ATTR,int,4,12.1src/sys/sys/consio.h,79
+GIO_COLOR,int,4,12.1src/sys/sys/consio.h,82
+GIO_FONT8x14,fnt14_t,3584,12.1src/sys/sys/consio.h,246
+GIO_FONT8x16,fnt16_t,4096,12.1src/sys/sys/consio.h,248
+GIO_FONT8x8,fnt8_t,2048,12.1src/sys/sys/consio.h,244
+GIO_SCRNMAP,scrmap_t,256,12.1src/sys/sys/consio.h,75
+GIO_VFONT,vfnt_t,48,12.1src/sys/sys/consio.h,250
+KDGETMODE,int,4,12.1src/sys/sys/consio.h,55
+KDRASTER,scr_size_t,12,12.1src/sys/sys/consio.h,67
+PIO_FONT8x14,fnt14_t,3584,12.1src/sys/sys/consio.h,245
+PIO_FONT8x16,fnt16_t,4096,12.1src/sys/sys/consio.h,247
+PIO_FONT8x8,fnt8_t,2048,12.1src/sys/sys/consio.h,243
+PIO_SCRNMAP,scrmap_t,256,12.1src/sys/sys/consio.h,76
+PIO_VFONT,vfnt_t,48,12.1src/sys/sys/consio.h,249
+VT_GETACTIVE,int,4,12.1src/sys/sys/consio.h,366
+VT_GETINDEX,int,4,12.1src/sys/sys/consio.h,369
+VT_GETMODE,vtmode_t,8,12.1src/sys/sys/consio.h,351
+VT_LOCKSWITCH,int,4,12.1src/sys/sys/consio.h,372
+VT_OPENQRY,int,4,12.1src/sys/sys/consio.h,332
+VT_SETMODE,vtmode_t,8,12.1src/sys/sys/consio.h,350
+MOUSE_GETHWID,int,4,12.1src/sys/sys/mouse.h,48
+MOUSE_GETLEVEL,int,4,12.1src/sys/sys/mouse.h,39
+MOUSE_SETLEVEL,int,4,12.1src/sys/sys/mouse.h,40
+MOUSE_SETRATE,int,4,12.1src/sys/sys/mouse.h,47
+MOUSE_SETRESOLUTION,int,4,12.1src/sys/sys/mouse.h,45
+MOUSE_SETSCALING,int,4,12.1src/sys/sys/mouse.h,46
+AGPIOC_DEALLOCATE,int,4,12.1src/sys/sys/agpio.h,90
+IOCATAATTACH,int,4,12.1src/sys/sys/ata.h,591
+IOCATADETACH,int,4,12.1src/sys/sys/ata.h,592
+IOCATADEVICES,struct ata_ioc_devices,1092,12.1src/sys/sys/ata.h,593
+IOCATAGMAXCHANNEL,int,4,12.1src/sys/sys/ata.h,589
+IOCATAGMODE,int,4,12.1src/sys/sys/ata.h,1006
+IOCATAGPARM,struct ata_params,512,12.1src/sys/sys/ata.h,1005
+IOCATAGSPINDOWN,int,4,12.1src/sys/sys/ata.h,1009
+IOCATARAIDADDSPARE,struct ata_ioc_raid_config,88,12.1src/sys/sys/ata.h,1056
+IOCATARAIDCREATE,struct ata_ioc_raid_config,88,12.1src/sys/sys/ata.h,1053
+IOCATARAIDDELETE,int,4,12.1src/sys/sys/ata.h,1054
+IOCATARAIDREBUILD,int,4,12.1src/sys/sys/ata.h,1057
+IOCATARAIDSTATUS,struct ata_ioc_raid_status,152,12.1src/sys/sys/ata.h,1055
+IOCATAREINIT,int,4,12.1src/sys/sys/ata.h,590
+IOCATAREQUEST,struct ata_ioc_request,56,12.1src/sys/sys/ata.h,1004
+IOCATASMODE,int,4,12.1src/sys/sys/ata.h,1007
+IOCATASSPINDOWN,int,4,12.1src/sys/sys/ata.h,1010
+OTIOCGETD,int,4,12.1src/sys/sys/ioctl_compat.h,76
+OTIOCSETD,int,4,12.1src/sys/sys/ioctl_compat.h,77
+TIOCGETC,struct tchars,6,12.1src/sys/sys/ioctl_compat.h,83
+TIOCGETP,struct sgttyb,6,12.1src/sys/sys/ioctl_compat.h,79
+TIOCGLTC,struct ltchars,6,12.1src/sys/sys/ioctl_compat.h,132
+TIOCLBIC,int,4,12.1src/sys/sys/ioctl_compat.h,151
+TIOCLBIS,int,4,12.1src/sys/sys/ioctl_compat.h,152
+TIOCLGET,int,4,12.1src/sys/sys/ioctl_compat.h,134
+TIOCLSET,int,4,12.1src/sys/sys/ioctl_compat.h,150
+TIOCSETC,struct tchars,6,12.1src/sys/sys/ioctl_compat.h,82
+TIOCSETN,struct sgttyb,6,12.1src/sys/sys/ioctl_compat.h,81
+TIOCSETP,struct sgttyb,6,12.1src/sys/sys/ioctl_compat.h,80
+TIOCSLTC,struct ltchars,6,12.1src/sys/sys/ioctl_compat.h,133
+DVDIOCREADSTRUCTURE,struct dvd_struct,2060,12.1src/sys/sys/dvdio.h,110
+DVDIOCREPORTKEY,struct dvd_authinfo,24,12.1src/sys/sys/dvdio.h,108
+DVDIOCSENDKEY,struct dvd_authinfo,24,12.1src/sys/sys/dvdio.h,109
+SNPSTTY,int,4,12.1src/sys/sys/snoop.h,31
+EFIIOC_GET_TABLE,struct efi_get_table_ioc,20,12.1src/sys/sys/efiio.h,51
+EFIIOC_GET_TIME,struct efi_tm,16,12.1src/sys/sys/efiio.h,52
+EFIIOC_SET_TIME,struct efi_tm,16,12.1src/sys/sys/efiio.h,53
+EFIIOC_VAR_GET,struct efi_var_ioc,36,12.1src/sys/sys/efiio.h,54
+EFIIOC_VAR_NEXT,struct efi_var_ioc,36,12.1src/sys/sys/efiio.h,55
+EFIIOC_VAR_SET,struct efi_var_ioc,36,12.1src/sys/sys/efiio.h,56
+DEV_ATTACH,struct devreq,140,12.1src/sys/sys/bus.h,121
+DEV_CLEAR_DRIVER,struct devreq,140,12.1src/sys/sys/bus.h,128
+DEV_DELETE,struct devreq,140,12.1src/sys/sys/bus.h,130
+DEV_DETACH,struct devreq,140,12.1src/sys/sys/bus.h,122
+DEV_DISABLE,struct devreq,140,12.1src/sys/sys/bus.h,124
+DEV_ENABLE,struct devreq,140,12.1src/sys/sys/bus.h,123
+DEV_FREEZE,struct devreq,140,12.1src/sys/sys/bus.h,131
+DEV_RESCAN,struct devreq,140,12.1src/sys/sys/bus.h,129
+DEV_RESET,struct devreq,140,12.1src/sys/sys/bus.h,133
+DEV_RESUME,struct devreq,140,12.1src/sys/sys/bus.h,126
+DEV_SET_DRIVER,struct devreq,140,12.1src/sys/sys/bus.h,127
+DEV_SUSPEND,struct devreq,140,12.1src/sys/sys/bus.h,125
+DEV_THAW,struct devreq,140,12.1src/sys/sys/bus.h,132
+AACIO_STATS,union aac_statrequest,8,12.1src/sys/sys/aac_ioctl.h,55
+MEMRANGE_GET,struct mem_range_op,12,12.1src/sys/sys/memrange.h,45
+MEMRANGE_SET,struct mem_range_op,12,12.1src/sys/sys/memrange.h,46
+MTIOCERRSTAT,union mterrstat,256,12.1src/sys/sys/mtio.h,330
+MTIOCEXTGET,struct mtextget,208,12.1src/sys/sys/mtio.h,342
+MTIOCEXTLOCATE,struct mtlocate,92,12.1src/sys/sys/mtio.h,341
+MTIOCGET,struct mtget,76,12.1src/sys/sys/mtio.h,316
+MTIOCGETEOTMODEL,u_int32_t,4,12.1src/sys/sys/mtio.h,338
+MTIOCHLOCATE,u_int32_t,4,12.1src/sys/sys/mtio.h,329
+MTIOCPARAMGET,struct mtextget,208,12.1src/sys/sys/mtio.h,343
+MTIOCPARAMSET,struct mtparamset,268,12.1src/sys/sys/mtio.h,344
+MTIOCRBLIM,struct mtrblim,12,12.1src/sys/sys/mtio.h,340
+MTIOCRDHPOS,u_int32_t,4,12.1src/sys/sys/mtio.h,327
+MTIOCRDSPOS,u_int32_t,4,12.1src/sys/sys/mtio.h,326
+MTIOCSETEOTMODEL,u_int32_t,4,12.1src/sys/sys/mtio.h,336
+MTIOCSETLIST,struct mtsetlist,12,12.1src/sys/sys/mtio.h,345
+MTIOCSLOCATE,u_int32_t,4,12.1src/sys/sys/mtio.h,328
+MTIOCTOP,struct mtop,8,12.1src/sys/sys/mtio.h,315
+WDIOC_GETPRETIMEOUT,int,4,12.1src/sys/sys/watchdog.h,44
+WDIOC_GETTIMELEFT,int,4,12.1src/sys/sys/watchdog.h,43
+WDIOC_GETTIMEOUT,int,4,12.1src/sys/sys/watchdog.h,42
+WDIOC_SETPRETIMEOUT,int,4,12.1src/sys/sys/watchdog.h,45
+WDIOC_SETPRETIMEOUTACT,int,4,12.1src/sys/sys/watchdog.h,47
+WDIOC_SETSOFT,int,4,12.1src/sys/sys/watchdog.h,50
+WDIOC_SETSOFTTIMEOUTACT,int,4,12.1src/sys/sys/watchdog.h,51
+WDIOC_SETTIMEOUT,int,4,12.1src/sys/sys/watchdog.h,41
+CPUCTL_CPUID,cpuctl_cpuid_args_t,20,12.1src/sys/sys/cpuctl.h,57
+CPUCTL_CPUID_COUNT,cpuctl_cpuid_count_args_t,24,12.1src/sys/sys/cpuctl.h,61
+CPUCTL_MSRCBIT,cpuctl_msr_args_t,12,12.1src/sys/sys/cpuctl.h,60
+CPUCTL_MSRSBIT,cpuctl_msr_args_t,12,12.1src/sys/sys/cpuctl.h,59
+CPUCTL_RDMSR,cpuctl_msr_args_t,12,12.1src/sys/sys/cpuctl.h,55
+CPUCTL_UPDATE,cpuctl_update_args_t,8,12.1src/sys/sys/cpuctl.h,58
+CPUCTL_WRMSR,cpuctl_msr_args_t,12,12.1src/sys/sys/cpuctl.h,56
+PCIOCATTACHED,struct pci_io,20,12.1src/sys/sys/pciio.h,162
+PCIOCBARMMAP,struct pci_bar_mmap,40,12.1src/sys/sys/pciio.h,165
+PCIOCGETBAR,struct pci_bar_io,32,12.1src/sys/sys/pciio.h,163
+PCIOCGETCONF,struct pci_conf_io,36,12.1src/sys/sys/pciio.h,159
+PCIOCLISTVPD,struct pci_list_vpd_io,16,12.1src/sys/sys/pciio.h,164
+PCIOCREAD,struct pci_io,20,12.1src/sys/sys/pciio.h,160
+PCIOCWRITE,struct pci_io,20,12.1src/sys/sys/pciio.h,161
+PPS_IOC_FETCH,struct pps_fetch_args,48,12.1src/sys/sys/timepps.h,132
+PPS_IOC_FETCH_FFCOUNTER,struct pps_fetch_ffc_args,64,12.1src/sys/sys/timepps.h,134
+PPS_IOC_GETCAP,int,4,12.1src/sys/sys/timepps.h,131
+PPS_IOC_GETPARAMS,pps_params_t,32,12.1src/sys/sys/timepps.h,130
+PPS_IOC_KCBIND,struct pps_kcbind_args,12,12.1src/sys/sys/timepps.h,133
+PPS_IOC_SETPARAMS,pps_params_t,32,12.1src/sys/sys/timepps.h,129
+MDIOCATTACH,struct md_ioctl,436,12.1src/sys/sys/mdioctl.h,81
+MDIOCDETACH,struct md_ioctl,436,12.1src/sys/sys/mdioctl.h,82
+MDIOCLIST,struct md_ioctl,436,12.1src/sys/sys/mdioctl.h,84
+MDIOCQUERY,struct md_ioctl,436,12.1src/sys/sys/mdioctl.h,83
+MDIOCRESIZE,struct md_ioctl,436,12.1src/sys/sys/mdioctl.h,85
+FD_FORM,struct fd_formb,164,12.1src/sys/sys/fdcio.h,129
+FD_GDTYPE,enum fd_drivetype,4,12.1src/sys/sys/fdcio.h,146
+FD_GOPTS,int,4,12.1src/sys/sys/fdcio.h,133
+FD_GSTAT,struct fdc_status,28,12.1src/sys/sys/fdcio.h,144
+FD_GTYPE,struct fd_type,48,12.1src/sys/sys/fdcio.h,130
+FD_READID,struct fdc_readid,4,12.1src/sys/sys/fdcio.h,138
+FD_SOPTS,int,4,12.1src/sys/sys/fdcio.h,134
+FD_STYPE,struct fd_type,48,12.1src/sys/sys/fdcio.h,131
+ALT_READ_TG_MEM,struct tg_mem,12,12.1src/sys/sys/tiio.h,330
+ALT_READ_TG_REG,struct tg_reg,8,12.1src/sys/sys/tiio.h,332
+ALT_WRITE_TG_MEM,struct tg_mem,12,12.1src/sys/sys/tiio.h,331
+ALT_WRITE_TG_REG,struct tg_reg,8,12.1src/sys/sys/tiio.h,333
+TIIOCGETPARAMS,struct ti_params,28,12.1src/sys/sys/tiio.h,320
+TIIOCGETSTATS,struct ti_stats,1024,12.1src/sys/sys/tiio.h,319
+TIIOCGETTRACE,struct ti_trace_buf,16,12.1src/sys/sys/tiio.h,323
+TIIOCSETPARAMS,struct ti_params,28,12.1src/sys/sys/tiio.h,321
+TIIOCSETTRACE,ti_trace_type,4,12.1src/sys/sys/tiio.h,322
+CDRIOCBLANK,int,4,12.1src/sys/sys/cdrio.h,121
+CDRIOCFIXATE,int,4,12.1src/sys/sys/cdrio.h,131
+CDRIOCFORMAT,struct cdr_format_params,12,12.1src/sys/sys/cdrio.h,139
+CDRIOCGETBLOCKSIZE,int,4,12.1src/sys/sys/cdrio.h,135
+CDRIOCGETPROGRESS,int,4,12.1src/sys/sys/cdrio.h,137
+CDRIOCINITTRACK,struct cdr_track,12,12.1src/sys/sys/cdrio.h,128
+CDRIOCINITWRITER,int,4,12.1src/sys/sys/cdrio.h,127
+CDRIOCNEXTWRITEABLEADDR,int,4,12.1src/sys/sys/cdrio.h,126
+CDRIOCREADFORMATCAPS,struct cdr_format_capacities,268,12.1src/sys/sys/cdrio.h,138
+CDRIOCREADSPEED,int,4,12.1src/sys/sys/cdrio.h,132
+CDRIOCSENDCUE,struct cdr_cuesheet,20,12.1src/sys/sys/cdrio.h,129
+CDRIOCSETBLOCKSIZE,int,4,12.1src/sys/sys/cdrio.h,136
+CDRIOCWRITESPEED,int,4,12.1src/sys/sys/cdrio.h,133
+DIOCGATTR,struct diocgattr_arg,324,12.1src/sys/sys/disk.h,142
+DIOCGIDENT,char [ DISK_IDENT_SIZE ],256,12.1src/sys/sys/disk.h,85
+DIOCGPHYSPATH,char [ MAXPATHLEN ],1024,12.1src/sys/sys/disk.h,124
+DIOCGPROVIDERNAME,char [ MAXPATHLEN ],1024,12.1src/sys/sys/disk.h,106
+DIOCSKERNELDUMP,struct diocskerneldump_arg,76,12.1src/sys/sys/disk.h,154
+DIOCZONECMD,struct disk_zone_args,108,12.1src/sys/sys/disk.h,144
+PIOCGFL,unsigned int,4,12.1src/sys/sys/pioctl.h,62
+PIOCSTATUS,struct procfs_status,20,12.1src/sys/sys/pioctl.h,61
+PIOCWAIT,struct procfs_status,20,12.1src/sys/sys/pioctl.h,58
+IOV_CONFIG,struct pci_iov_arg,8,12.1src/sys/sys/iov.h,254
+IOV_GET_SCHEMA,struct pci_iov_schema,12,12.1src/sys/sys/iov.h,256
+AIOGCAP,snd_capabilities,28,12.1src/sys/sys/soundcard.h,306
+AIOGFMT,snd_chan_param,16,12.1src/sys/sys/soundcard.h,250
+AIOGMIX,snd_mix_param,4,12.1src/sys/sys/soundcard.h,264
+AIOGSIZE,struct snd_size,8,12.1src/sys/sys/soundcard.h,142
+AIONWRITE,int,4,12.1src/sys/sys/soundcard.h,137
+AIOSFMT,snd_chan_param,16,12.1src/sys/sys/soundcard.h,251
+AIOSMIX,snd_mix_param,4,12.1src/sys/sys/soundcard.h,265
+AIOSSIZE,struct snd_size,8,12.1src/sys/sys/soundcard.h,143
+AIOSTOP,int,4,12.1src/sys/sys/soundcard.h,273
+AIOSYNC,snd_sync_parm,8,12.1src/sys/sys/soundcard.h,287
+MIOGPASSTHRU,int,4,12.1src/sys/sys/soundcard.h,774
+MIOSPASSTHRU,int,4,12.1src/sys/sys/soundcard.h,773
+OSS_GETVERSION,int,4,12.1src/sys/sys/soundcard.h,1733
+SNDCTL_AUDIOINFO,oss_audioinfo,1180,12.1src/sys/sys/soundcard.h,1989
+SNDCTL_AUDIOINFO_EX,oss_audioinfo,1180,12.1src/sys/sys/soundcard.h,1995
+SNDCTL_CARDINFO,oss_card_info,1176,12.1src/sys/sys/soundcard.h,1993
+SNDCTL_COPR_HALT,copr_debug_buf,20,12.1src/sys/sys/soundcard.h,993
+SNDCTL_COPR_LOAD,copr_buffer,4016,12.1src/sys/sys/soundcard.h,987
+SNDCTL_COPR_RCODE,copr_debug_buf,20,12.1src/sys/sys/soundcard.h,989
+SNDCTL_COPR_RCVMSG,copr_msg,4004,12.1src/sys/sys/soundcard.h,995
+SNDCTL_COPR_RDATA,copr_debug_buf,20,12.1src/sys/sys/soundcard.h,988
+SNDCTL_COPR_RUN,copr_debug_buf,20,12.1src/sys/sys/soundcard.h,992
+SNDCTL_COPR_SENDMSG,copr_msg,4004,12.1src/sys/sys/soundcard.h,994
+SNDCTL_COPR_WCODE,copr_debug_buf,20,12.1src/sys/sys/soundcard.h,991
+SNDCTL_COPR_WDATA,copr_debug_buf,20,12.1src/sys/sys/soundcard.h,990
+SNDCTL_DSP_BIND_CHANNEL,int,4,12.1src/sys/sys/soundcard.h,1717
+SNDCTL_DSP_COOKEDMODE,int,4,12.1src/sys/sys/soundcard.h,1628
+SNDCTL_DSP_CURRENT_IPTR,oss_count_t,140,12.1src/sys/sys/soundcard.h,1669
+SNDCTL_DSP_CURRENT_OPTR,oss_count_t,140,12.1src/sys/sys/soundcard.h,1670
+SNDCTL_DSP_GETBLKSIZE,int,4,12.1src/sys/sys/soundcard.h,785
+SNDCTL_DSP_GETCAPS,int,4,12.1src/sys/sys/soundcard.h,829
+SNDCTL_DSP_GETCHANNELMASK,int,4,12.1src/sys/sys/soundcard.h,1716
+SNDCTL_DSP_GETERROR,audio_errinfo,104,12.1src/sys/sys/soundcard.h,1597
+SNDCTL_DSP_GETFMTS,int,4,12.1src/sys/sys/soundcard.h,806
+SNDCTL_DSP_GETIPEAKS,oss_peaks_t,256,12.1src/sys/sys/soundcard.h,1707
+SNDCTL_DSP_GETIPTR,count_info,12,12.1src/sys/sys/soundcard.h,933
+SNDCTL_DSP_GETISPACE,audio_buf_info,16,12.1src/sys/sys/soundcard.h,820
+SNDCTL_DSP_GETODELAY,int,4,12.1src/sys/sys/soundcard.h,945
+SNDCTL_DSP_GETOPEAKS,oss_peaks_t,256,12.1src/sys/sys/soundcard.h,1708
+SNDCTL_DSP_GETOPTR,count_info,12,12.1src/sys/sys/soundcard.h,934
+SNDCTL_DSP_GETOSPACE,audio_buf_info,16,12.1src/sys/sys/soundcard.h,819
+SNDCTL_DSP_GETPLAYVOL,int,4,12.1src/sys/sys/soundcard.h,1595
+SNDCTL_DSP_GETRECVOL,int,4,12.1src/sys/sys/soundcard.h,1684
+SNDCTL_DSP_GETTRIGGER,int,4,12.1src/sys/sys/soundcard.h,919
+SNDCTL_DSP_GET_CHNORDER,unsigned long long,8,12.1src/sys/sys/soundcard.h,1691
+SNDCTL_DSP_GET_PLAYTGT,int,4,12.1src/sys/sys/soundcard.h,1682
+SNDCTL_DSP_GET_RECSRC,int,4,12.1src/sys/sys/soundcard.h,1678
+SNDCTL_DSP_LOW_WATER,int,4,12.1src/sys/sys/soundcard.h,1652
+SNDCTL_DSP_MAPINBUF,buffmem_desc,8,12.1src/sys/sys/soundcard.h,941
+SNDCTL_DSP_MAPOUTBUF,buffmem_desc,8,12.1src/sys/sys/soundcard.h,942
+SNDCTL_DSP_POLICY,int,4,12.1src/sys/sys/soundcard.h,1709
+SNDCTL_DSP_SETBLKSIZE,int,4,12.1src/sys/sys/soundcard.h,786
+SNDCTL_DSP_SETFMT,int,4,12.1src/sys/sys/soundcard.h,787
+SNDCTL_DSP_SETFRAGMENT,int,4,12.1src/sys/sys/soundcard.h,803
+SNDCTL_DSP_SETPLAYVOL,int,4,12.1src/sys/sys/soundcard.h,1596
+SNDCTL_DSP_SETRECVOL,int,4,12.1src/sys/sys/soundcard.h,1685
+SNDCTL_DSP_SETTRIGGER,int,4,12.1src/sys/sys/soundcard.h,920
+SNDCTL_DSP_SET_CHNORDER,unsigned long long,8,12.1src/sys/sys/soundcard.h,1692
+SNDCTL_DSP_SET_PLAYTGT,int,4,12.1src/sys/sys/soundcard.h,1683
+SNDCTL_DSP_SET_RECSRC,int,4,12.1src/sys/sys/soundcard.h,1679
+SNDCTL_DSP_SPEED,int,4,12.1src/sys/sys/soundcard.h,783
+SNDCTL_DSP_STEREO,int,4,12.1src/sys/sys/soundcard.h,784
+SNDCTL_DSP_SUBDIVIDE,int,4,12.1src/sys/sys/soundcard.h,802
+SNDCTL_DSP_SYNCGROUP,oss_syncgroup,72,12.1src/sys/sys/soundcard.h,1611
+SNDCTL_DSP_SYNCSTART,int,4,12.1src/sys/sys/soundcard.h,1612
+SNDCTL_ENGINEINFO,oss_audioinfo,1180,12.1src/sys/sys/soundcard.h,1994
+SNDCTL_FM_4OP_ENABLE,int,4,12.1src/sys/sys/soundcard.h,332
+SNDCTL_FM_LOAD_INSTR,struct sbi_instrument,40,12.1src/sys/sys/soundcard.h,323
+SNDCTL_GETLABEL,oss_label_t,16,12.1src/sys/sys/soundcard.h,2004
+SNDCTL_GETSONG,oss_longname_t,64,12.1src/sys/sys/soundcard.h,2001
+SNDCTL_MIDIINFO,oss_midi_info,1256,12.1src/sys/sys/soundcard.h,1991
+SNDCTL_MIDI_INFO,struct midi_info,116,12.1src/sys/sys/soundcard.h,328
+SNDCTL_MIDI_MPUCMD,mpu_command_rec,33,12.1src/sys/sys/soundcard.h,772
+SNDCTL_MIDI_MPUMODE,int,4,12.1src/sys/sys/soundcard.h,771
+SNDCTL_MIDI_PRETIME,int,4,12.1src/sys/sys/soundcard.h,770
+SNDCTL_MIXERINFO,oss_mixerinfo,1136,12.1src/sys/sys/soundcard.h,1992
+SNDCTL_MIX_ENUMINFO,oss_mixer_enuminfo,3528,12.1src/sys/sys/soundcard.h,1990
+SNDCTL_MIX_EXTINFO,oss_mixext,220,12.1src/sys/sys/soundcard.h,1985
+SNDCTL_MIX_NREXT,int,4,12.1src/sys/sys/soundcard.h,1984
+SNDCTL_MIX_NRMIX,int,4,12.1src/sys/sys/soundcard.h,1983
+SNDCTL_MIX_READ,oss_mixer_value,52,12.1src/sys/sys/soundcard.h,1986
+SNDCTL_MIX_WRITE,oss_mixer_value,52,12.1src/sys/sys/soundcard.h,1987
+SNDCTL_PMGR_ACCESS,struct patmgr_info,4024,12.1src/sys/sys/soundcard.h,333
+SNDCTL_PMGR_IFACE,struct patmgr_info,4024,12.1src/sys/sys/soundcard.h,476
+SNDCTL_SEQ_CTRLRATE,int,4,12.1src/sys/sys/soundcard.h,319
+SNDCTL_SEQ_GETINCOUNT,int,4,12.1src/sys/sys/soundcard.h,321
+SNDCTL_SEQ_GETOUTCOUNT,int,4,12.1src/sys/sys/soundcard.h,320
+SNDCTL_SEQ_GETTIME,int,4,12.1src/sys/sys/soundcard.h,336
+SNDCTL_SEQ_NRMIDIS,int,4,12.1src/sys/sys/soundcard.h,327
+SNDCTL_SEQ_NRSYNTHS,int,4,12.1src/sys/sys/soundcard.h,326
+SNDCTL_SEQ_OUTOFBAND,struct seq_event_rec,8,12.1src/sys/sys/soundcard.h,335
+SNDCTL_SEQ_PERCMODE,int,4,12.1src/sys/sys/soundcard.h,322
+SNDCTL_SEQ_RESETSAMPLES,int,4,12.1src/sys/sys/soundcard.h,325
+SNDCTL_SEQ_TESTMIDI,int,4,12.1src/sys/sys/soundcard.h,324
+SNDCTL_SEQ_THRESHOLD,int,4,12.1src/sys/sys/soundcard.h,329
+SNDCTL_SETLABEL,oss_label_t,16,12.1src/sys/sys/soundcard.h,2003
+SNDCTL_SETNAME,oss_longname_t,64,12.1src/sys/sys/soundcard.h,2002
+SNDCTL_SETSONG,oss_longname_t,64,12.1src/sys/sys/soundcard.h,2000
+SNDCTL_SYNTH_INFO,struct synth_info,140,12.1src/sys/sys/soundcard.h,318
+SNDCTL_SYNTH_MEMAVL,int,4,12.1src/sys/sys/soundcard.h,331
+SNDCTL_SYSINFO,oss_sysinfo,1248,12.1src/sys/sys/soundcard.h,1980
+SNDCTL_TMR_METRONOME,int,4,12.1src/sys/sys/soundcard.h,354
+SNDCTL_TMR_SELECT,int,4,12.1src/sys/sys/soundcard.h,355
+SNDCTL_TMR_SOURCE,int,4,12.1src/sys/sys/soundcard.h,347
+SNDCTL_TMR_TEMPO,int,4,12.1src/sys/sys/soundcard.h,346
+SNDCTL_TMR_TIMEBASE,int,4,12.1src/sys/sys/soundcard.h,342
+SOUND_MIXER_INFO,mixer_info,92,12.1src/sys/sys/soundcard.h,1195
+SOUND_PCM_READ_BITS,int,4,12.1src/sys/sys/soundcard.h,953
+SOUND_PCM_READ_CHANNELS,int,4,12.1src/sys/sys/soundcard.h,952
+SOUND_PCM_READ_FILTER,int,4,12.1src/sys/sys/soundcard.h,954
+SOUND_PCM_READ_RATE,int,4,12.1src/sys/sys/soundcard.h,951
+SOUND_PCM_WRITE_CHANNELS,int,4,12.1src/sys/sys/soundcard.h,793
+SOUND_PCM_WRITE_FILTER,int,4,12.1src/sys/sys/soundcard.h,795
+FIOASYNC,int,4,12.1src/sys/sys/filio.h,51
+FIOBMAP2,struct fiobmap2_arg,16,12.1src/sys/sys/filio.h,72
+FIODGNAME,struct fiodgname_arg,8,12.1src/sys/sys/filio.h,60
+FIODTYPE,int,4,12.1src/sys/sys/filio.h,54
+FIOGETLBA,int,4,12.1src/sys/sys/filio.h,55
+FIOGETOWN,int,4,12.1src/sys/sys/filio.h,53
+FIONBIO,int,4,12.1src/sys/sys/filio.h,50
+FIONREAD,int,4,12.1src/sys/sys/filio.h,49
+FIONSPACE,int,4,12.1src/sys/sys/filio.h,62
+FIONWRITE,int,4,12.1src/sys/sys/filio.h,61
+FIOSETOWN,int,4,12.1src/sys/sys/filio.h,52
+FBIOGATTR,struct fbgattr,88,12.1src/sys/sys/fbio.h,226
+FBIOGCURMAX,struct fbcurpos,4,12.1src/sys/sys/fbio.h,276
+FBIOGCURPOS,struct fbcurpos,4,12.1src/sys/sys/fbio.h,273
+FBIOGCURSOR,struct fbcursor,44,12.1src/sys/sys/fbio.h,269
+FBIOGETCMAP,struct fbcmap,20,12.1src/sys/sys/fbio.h,201
+FBIOGETCMAPI,struct fbcmap_i,28,12.1src/sys/sys/fbio.h,330
+FBIOGINFO,struct fbinfo,24,12.1src/sys/sys/fbio.h,187
+FBIOGTYPE,struct fbtype,24,12.1src/sys/sys/fbio.h,107
+FBIOGVIDEO,int,4,12.1src/sys/sys/fbio.h,235
+FBIOGXINFO,struct brd_info,16,12.1src/sys/sys/fbio.h,291
+FBIOMONINFO,struct mon_info,32,12.1src/sys/sys/fbio.h,313
+FBIOPUTCMAP,struct fbcmap,20,12.1src/sys/sys/fbio.h,200
+FBIOPUTCMAPI,struct fbcmap_i,28,12.1src/sys/sys/fbio.h,329
+FBIOSATTR,struct fbsattr,40,12.1src/sys/sys/fbio.h,225
+FBIOSCURPOS,struct fbcurpos,4,12.1src/sys/sys/fbio.h,272
+FBIOSCURSOR,struct fbcursor,44,12.1src/sys/sys/fbio.h,268
+FBIOSVIDEO,int,4,12.1src/sys/sys/fbio.h,234
+FBIO_ADAPTER,int,4,12.1src/sys/sys/fbio.h,588
+FBIO_ADPINFO,struct video_adapter_info,164,12.1src/sys/sys/fbio.h,590
+FBIO_ADPTYPE,int,4,12.1src/sys/sys/fbio.h,589
+FBIO_BLANK,int,4,12.1src/sys/sys/fbio.h,620
+FBIO_FINDMODE,struct video_info,164,12.1src/sys/sys/fbio.h,594
+FBIO_GETDISPSTART,video_display_start_t,8,12.1src/sys/sys/fbio.h,603
+FBIO_GETLINEWIDTH,u_int,4,12.1src/sys/sys/fbio.h,607
+FBIO_GETMODE,int,4,12.1src/sys/sys/fbio.h,595
+FBIO_GETPALETTE,video_color_palette_t,24,12.1src/sys/sys/fbio.h,611
+FBIO_GETWINORG,u_int,4,12.1src/sys/sys/fbio.h,599
+FBIO_MODEINFO,struct video_info,164,12.1src/sys/sys/fbio.h,593
+FBIO_SETDISPSTART,video_display_start_t,8,12.1src/sys/sys/fbio.h,604
+FBIO_SETLINEWIDTH,u_int,4,12.1src/sys/sys/fbio.h,608
+FBIO_SETMODE,int,4,12.1src/sys/sys/fbio.h,596
+FBIO_SETPALETTE,video_color_palette_t,24,12.1src/sys/sys/fbio.h,612
+FBIO_SETWINORG,u_int,4,12.1src/sys/sys/fbio.h,600
+SPIGENIOC_TRANSFER,struct spigen_transfer,16,12.1src/sys/sys/spigenio.h,48
+SPIGENIOC_TRANSFER_MMAPPED,struct spigen_transfer_mmapped,8,12.1src/sys/sys/spigenio.h,50
+TIOCCONS,int,4,12.1src/sys/sys/ttycom.h,93
+TIOCEXT,int,4,12.1src/sys/sys/ttycom.h,91
+TIOCFLUSH,int,4,12.1src/sys/sys/ttycom.h,68
+TIOCGDRAINWAIT,int,4,12.1src/sys/sys/ttycom.h,79
+TIOCGETA,struct termios,44,12.1src/sys/sys/ttycom.h,70
+TIOCGETD,int,4,12.1src/sys/sys/ttycom.h,75
+TIOCGPGRP,int,4,12.1src/sys/sys/ttycom.h,134
+TIOCGPTN,int,4,12.1src/sys/sys/ttycom.h,67
+TIOCGSID,int,4,12.1src/sys/sys/ttycom.h,94
+TIOCGWINSZ,struct winsize,8,12.1src/sys/sys/ttycom.h,100
+TIOCMBIC,int,4,12.1src/sys/sys/ttycom.h,115
+TIOCMBIS,int,4,12.1src/sys/sys/ttycom.h,116
+TIOCMGDTRWAIT,int,4,12.1src/sys/sys/ttycom.h,85
+TIOCMGET,int,4,12.1src/sys/sys/ttycom.h,102
+TIOCMSDTRWAIT,int,4,12.1src/sys/sys/ttycom.h,86
+TIOCMSET,int,4,12.1src/sys/sys/ttycom.h,117
+TIOCOUTQ,int,4,12.1src/sys/sys/ttycom.h,131
+TIOCPKT,int,4,12.1src/sys/sys/ttycom.h,120
+TIOCSDRAINWAIT,int,4,12.1src/sys/sys/ttycom.h,80
+TIOCSETA,struct termios,44,12.1src/sys/sys/ttycom.h,71
+TIOCSETAF,struct termios,44,12.1src/sys/sys/ttycom.h,73
+TIOCSETAW,struct termios,44,12.1src/sys/sys/ttycom.h,72
+TIOCSETD,int,4,12.1src/sys/sys/ttycom.h,76
+TIOCSPGRP,int,4,12.1src/sys/sys/ttycom.h,133
+TIOCSTI,char,1,12.1src/sys/sys/ttycom.h,130
+TIOCSWINSZ,struct winsize,8,12.1src/sys/sys/ttycom.h,99
+TIOCTIMESTAMP,struct timeval,8,12.1src/sys/sys/ttycom.h,83
+TIOCUCNTL,int,4,12.1src/sys/sys/ttycom.h,97
+CHIOEXCHANGE,struct changer_exchange,14,12.1src/sys/sys/chio.h,272
+CHIOGPARAMS,struct changer_params,8,12.1src/sys/sys/chio.h,276
+CHIOGPICKER,int,4,12.1src/sys/sys/chio.h,274
+CHIOGSTATUS,struct changer_element_status_request,12,12.1src/sys/sys/chio.h,280
+CHIOMOVE,struct changer_move,10,12.1src/sys/sys/chio.h,271
+CHIOPOSITION,struct changer_position,6,12.1src/sys/sys/chio.h,273
+CHIOSETVOLTAG,struct changer_set_voltag_request,42,12.1src/sys/sys/chio.h,279
+CHIOSPICKER,int,4,12.1src/sys/sys/chio.h,275
+OCHIOGSTATUS,struct changer_element_status_request,12,12.1src/sys/sys/chio.h,278
+PTIOCGETTIMEOUT,int,4,12.1src/sys/sys/ptio.h,36
+PTIOCSETTIMEOUT,int,4,12.1src/sys/sys/ptio.h,37
+GETFKEY,fkeyarg_t,20,12.1src/sys/sys/kbio.h,231
+GIO_DEADKEYMAP,accentmap_t,1578,12.1src/sys/sys/kbio.h,244
+GIO_KEYMAPENT,keyarg_t,40,12.1src/sys/sys/kbio.h,246
+KBADDKBD,keyboard_info_t,36,12.1src/sys/sys/kbio.h,74
+KBRELKBD,keyboard_info_t,36,12.1src/sys/sys/kbio.h,75
+KDGETLED,int,4,12.1src/sys/sys/kbio.h,57
+KDGETMODE,int,4,12.1src/sys/sys/kbio.h,25
+KDGETREPEAT,keyboard_repeat_t,8,12.1src/sys/sys/kbio.h,91
+KDGKBINFO,keyboard_info_t,36,12.1src/sys/sys/kbio.h,83
+KDGKBMODE,int,4,12.1src/sys/sys/kbio.h,17
+KDGKBSTATE,int,4,12.1src/sys/sys/kbio.h,36
+KDGKBTYPE,int,4,12.1src/sys/sys/kbio.h,50
+KDSETREPEAT,keyboard_repeat_t,8,12.1src/sys/sys/kbio.h,90
+OGIO_KEYMAP,okeymap_t,2562,12.1src/sys/sys/kbio.h,241
+OPIO_KEYMAP,okeymap_t,2562,12.1src/sys/sys/kbio.h,242
+PIO_DEADKEYMAP,accentmap_t,1578,12.1src/sys/sys/kbio.h,245
+PIO_KEYMAPENT,keyarg_t,40,12.1src/sys/sys/kbio.h,247
+SETFKEY,fkeyarg_t,20,12.1src/sys/sys/kbio.h,232
+CFIOCQRY,struct cfiocqry,12,12.1src/sys/sys/cfictl.h,47
+JOY_GETTIMEOUT,int,4,12.1src/sys/sys/joystick.h,46
+JOY_GET_X_OFFSET,int,4,12.1src/sys/sys/joystick.h,49
+JOY_GET_Y_OFFSET,int,4,12.1src/sys/sys/joystick.h,50
+JOY_SETTIMEOUT,int,4,12.1src/sys/sys/joystick.h,45
+JOY_SET_X_OFFSET,int,4,12.1src/sys/sys/joystick.h,47
+JOY_SET_Y_OFFSET,int,4,12.1src/sys/sys/joystick.h,48

@@ -1,0 +1,138 @@
+macro,type,size,file,line
+NIOCCTRL,struct nmreq_header,88,12.1src/sys/net/netmap.h,629
+SIOCGLAGG,struct lagg_reqall,64,12.1src/sys/net/if_lagg.h,127
+SIOCGLAGGFLAGS,struct lagg_reqflags,20,12.1src/sys/net/if_lagg.h,135
+SIOCGLAGGOPTS,struct lagg_reqopts,40,12.1src/sys/net/if_lagg.h,158
+SIOCGLAGGPORT,struct lagg_reqport,72,12.1src/sys/net/if_lagg.h,109
+SIOCSLAGG,struct lagg_reqall,64,12.1src/sys/net/if_lagg.h,128
+SIOCSLAGGDELPORT,struct lagg_reqport,72,12.1src/sys/net/if_lagg.h,111
+SIOCSLAGGHASH,struct lagg_reqflags,20,12.1src/sys/net/if_lagg.h,136
+SIOCSLAGGOPTS,struct lagg_reqopts,40,12.1src/sys/net/if_lagg.h,159
+SIOCSLAGGPORT,struct lagg_reqport,72,12.1src/sys/net/if_lagg.h,110
+TUNGDEBUG,int,4,12.1src/sys/net/if_tun.h,39
+TUNGIFHEAD,int,4,12.1src/sys/net/if_tun.h,47
+TUNGIFINFO,struct tuninfo,8,12.1src/sys/net/if_tun.h,41
+TUNGIFNAME,struct ifreq,32,12.1src/sys/net/if_tun.h,43
+TUNSDEBUG,int,4,12.1src/sys/net/if_tun.h,38
+TUNSIFHEAD,int,4,12.1src/sys/net/if_tun.h,46
+TUNSIFINFO,struct tuninfo,8,12.1src/sys/net/if_tun.h,40
+TUNSIFMODE,int,4,12.1src/sys/net/if_tun.h,44
+TUNSLMODE,int,4,12.1src/sys/net/if_tun.h,42
+SIOCGETPFSYNC,struct ifreq,32,12.1src/sys/net/if_pfsync.h,244
+SIOCSETPFSYNC,struct ifreq,32,12.1src/sys/net/if_pfsync.h,243
+NIOCCONFIG,struct nm_ifreq,272,12.1src/sys/net/netmap_legacy.h,255
+NIOCGINFO,struct nmreq,60,12.1src/sys/net/netmap_legacy.h,253
+NIOCREGIF,struct nmreq,60,12.1src/sys/net/netmap_legacy.h,254
+GREGADDRD,struct ifreq,32,12.1src/sys/net/if_gre.h,166
+GREGADDRS,struct ifreq,32,12.1src/sys/net/if_gre.h,165
+GREGKEY,struct ifreq,32,12.1src/sys/net/if_gre.h,170
+GREGOPTS,struct ifreq,32,12.1src/sys/net/if_gre.h,172
+GREGPORT,struct ifreq,32,12.1src/sys/net/if_gre.h,174
+GREGPROTO,struct ifreq,32,12.1src/sys/net/if_gre.h,168
+GRESADDRD,struct ifreq,32,12.1src/sys/net/if_gre.h,164
+GRESADDRS,struct ifreq,32,12.1src/sys/net/if_gre.h,163
+GRESKEY,struct ifreq,32,12.1src/sys/net/if_gre.h,171
+GRESOPTS,struct ifreq,32,12.1src/sys/net/if_gre.h,173
+GRESPORT,struct ifreq,32,12.1src/sys/net/if_gre.h,175
+GRESPROTO,struct ifreq,32,12.1src/sys/net/if_gre.h,167
+TAPGDEBUG,int,4,12.1src/sys/net/if_tap.h,57
+TAPGIFINFO,struct tapinfo,8,12.1src/sys/net/if_tap.h,59
+TAPGIFNAME,struct ifreq,32,12.1src/sys/net/if_tap.h,60
+TAPSDEBUG,int,4,12.1src/sys/net/if_tap.h,56
+TAPSIFINFO,struct tapinfo,8,12.1src/sys/net/if_tap.h,58
+BIOCFEEDBACK,u_int,4,12.1src/sys/net/bpf.h,143
+BIOCGBLEN,u_int,4,12.1src/sys/net/bpf.h,120
+BIOCGDIRECTION,u_int,4,12.1src/sys/net/bpf.h,137
+BIOCGDLT,u_int,4,12.1src/sys/net/bpf.h,125
+BIOCGDLTLIST,struct bpf_dltlist,8,12.1src/sys/net/bpf.h,140
+BIOCGETBUFMODE,u_int,4,12.1src/sys/net/bpf.h,144
+BIOCGETIF,struct ifreq,32,12.1src/sys/net/bpf.h,126
+BIOCGETZMAX,size_t,4,12.1src/sys/net/bpf.h,146
+BIOCGHDRCMPLT,u_int,4,12.1src/sys/net/bpf.h,135
+BIOCGRSIG,u_int,4,12.1src/sys/net/bpf.h,133
+BIOCGRTIMEOUT,struct timeval,8,12.1src/sys/net/bpf.h,129
+BIOCGSTATS,struct bpf_stat,8,12.1src/sys/net/bpf.h,130
+BIOCGTSTAMP,u_int,4,12.1src/sys/net/bpf.h,150
+BIOCIMMEDIATE,u_int,4,12.1src/sys/net/bpf.h,131
+BIOCROTZBUF,struct bpf_zbuf,12,12.1src/sys/net/bpf.h,147
+BIOCSBLEN,u_int,4,12.1src/sys/net/bpf.h,121
+BIOCSDIRECTION,u_int,4,12.1src/sys/net/bpf.h,138
+BIOCSDLT,u_int,4,12.1src/sys/net/bpf.h,139
+BIOCSETBUFMODE,u_int,4,12.1src/sys/net/bpf.h,145
+BIOCSETF,struct bpf_program,8,12.1src/sys/net/bpf.h,122
+BIOCSETFNR,struct bpf_program,8,12.1src/sys/net/bpf.h,149
+BIOCSETIF,struct ifreq,32,12.1src/sys/net/bpf.h,127
+BIOCSETWF,struct bpf_program,8,12.1src/sys/net/bpf.h,142
+BIOCSETZBUF,struct bpf_zbuf,12,12.1src/sys/net/bpf.h,148
+BIOCSHDRCMPLT,u_int,4,12.1src/sys/net/bpf.h,136
+BIOCSRSIG,u_int,4,12.1src/sys/net/bpf.h,134
+BIOCSRTIMEOUT,struct timeval,8,12.1src/sys/net/bpf.h,128
+BIOCSTSTAMP,u_int,4,12.1src/sys/net/bpf.h,151
+BIOCVERSION,struct bpf_version,4,12.1src/sys/net/bpf.h,132
+DIOCADDADDR,struct pfioc_pooladdr,1112,12.1src/sys/net/pfvar.h,1475
+DIOCADDALTQV0,struct pfioc_altq_v0,236,12.1src/sys/net/pfvar.h,1464
+DIOCADDALTQV1,struct pfioc_altq_v1,272,12.1src/sys/net/pfvar.h,1465
+DIOCADDRULE,struct pfioc_rule,2940,12.1src/sys/net/pfvar.h,1441
+DIOCADDSTATE,struct pfioc_state,242,12.1src/sys/net/pfvar.h,1457
+DIOCBEGINADDRS,struct pfioc_pooladdr,1112,12.1src/sys/net/pfvar.h,1474
+DIOCCHANGEADDR,struct pfioc_pooladdr,1112,12.1src/sys/net/pfvar.h,1478
+DIOCCHANGEALTQV0,struct pfioc_altq_v0,236,12.1src/sys/net/pfvar.h,1470
+DIOCCHANGEALTQV1,struct pfioc_altq_v1,272,12.1src/sys/net/pfvar.h,1471
+DIOCCHANGERULE,struct pfioc_rule,2940,12.1src/sys/net/pfvar.h,1453
+DIOCCLRIFFLAG,struct pfioc_iface,36,12.1src/sys/net/pfvar.h,1509
+DIOCCLRSTATES,struct pfioc_state_kill,204,12.1src/sys/net/pfvar.h,1445
+DIOCGETADDR,struct pfioc_pooladdr,1112,12.1src/sys/net/pfvar.h,1477
+DIOCGETADDRS,struct pfioc_pooladdr,1112,12.1src/sys/net/pfvar.h,1476
+DIOCGETALTQSV0,struct pfioc_altq_v0,236,12.1src/sys/net/pfvar.h,1466
+DIOCGETALTQSV1,struct pfioc_altq_v1,272,12.1src/sys/net/pfvar.h,1467
+DIOCGETALTQV0,struct pfioc_altq_v0,236,12.1src/sys/net/pfvar.h,1468
+DIOCGETALTQV1,struct pfioc_altq_v1,272,12.1src/sys/net/pfvar.h,1469
+DIOCGETLIMIT,struct pfioc_limit,8,12.1src/sys/net/pfvar.h,1459
+DIOCGETQSTATSV0,struct pfioc_qstats_v0,20,12.1src/sys/net/pfvar.h,1472
+DIOCGETQSTATSV1,struct pfioc_qstats_v1,24,12.1src/sys/net/pfvar.h,1473
+DIOCGETRULE,struct pfioc_rule,2940,12.1src/sys/net/pfvar.h,1443
+DIOCGETRULES,struct pfioc_rule,2940,12.1src/sys/net/pfvar.h,1442
+DIOCGETRULESET,struct pfioc_ruleset,1092,12.1src/sys/net/pfvar.h,1481
+DIOCGETRULESETS,struct pfioc_ruleset,1092,12.1src/sys/net/pfvar.h,1480
+DIOCGETSRCNODES,struct pfioc_src_nodes,8,12.1src/sys/net/pfvar.h,1504
+DIOCGETSTATE,struct pfioc_state,242,12.1src/sys/net/pfvar.h,1446
+DIOCGETSTATES,struct pfioc_states,8,12.1src/sys/net/pfvar.h,1452
+DIOCGETSTATUS,struct pf_status,416,12.1src/sys/net/pfvar.h,1448
+DIOCGETTIMEOUT,struct pfioc_tm,8,12.1src/sys/net/pfvar.h,1456
+DIOCGIFSPEEDV0,struct pf_ifspeed_v0,20,12.1src/sys/net/pfvar.h,1526
+DIOCGIFSPEEDV1,struct pf_ifspeed_v1,28,12.1src/sys/net/pfvar.h,1527
+DIOCIGETIFACES,struct pfioc_iface,36,12.1src/sys/net/pfvar.h,1507
+DIOCKILLSRCNODES,struct pfioc_src_node_kill,104,12.1src/sys/net/pfvar.h,1510
+DIOCKILLSTATES,struct pfioc_state_kill,204,12.1src/sys/net/pfvar.h,1461
+DIOCNATLOOK,struct pfioc_natlook,76,12.1src/sys/net/pfvar.h,1450
+DIOCOSFPADD,struct pf_osfp_ioctl,132,12.1src/sys/net/pfvar.h,1499
+DIOCOSFPGET,struct pf_osfp_ioctl,132,12.1src/sys/net/pfvar.h,1500
+DIOCRADDADDRS,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1489
+DIOCRADDTABLES,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1483
+DIOCRCLRADDRS,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1488
+DIOCRCLRASTATS,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1494
+DIOCRCLRTABLES,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1482
+DIOCRCLRTSTATS,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1487
+DIOCRDELADDRS,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1490
+DIOCRDELTABLES,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1484
+DIOCRGETADDRS,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1492
+DIOCRGETASTATS,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1493
+DIOCRGETTABLES,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1485
+DIOCRGETTSTATS,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1486
+DIOCRINADEFINE,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1497
+DIOCRSETADDRS,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1491
+DIOCRSETTFLAGS,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1496
+DIOCRTSTADDRS,struct pfioc_table,1100,12.1src/sys/net/pfvar.h,1495
+DIOCSETDEBUG,u_int32_t,4,12.1src/sys/net/pfvar.h,1451
+DIOCSETHOSTID,u_int32_t,4,12.1src/sys/net/pfvar.h,1506
+DIOCSETIFFLAG,struct pfioc_iface,36,12.1src/sys/net/pfvar.h,1508
+DIOCSETLIMIT,struct pfioc_limit,8,12.1src/sys/net/pfvar.h,1460
+DIOCSETSTATUSIF,struct pfioc_if,16,12.1src/sys/net/pfvar.h,1447
+DIOCSETTIMEOUT,struct pfioc_tm,8,12.1src/sys/net/pfvar.h,1455
+DIOCXBEGIN,struct pfioc_trans,12,12.1src/sys/net/pfvar.h,1501
+DIOCXCOMMIT,struct pfioc_trans,12,12.1src/sys/net/pfvar.h,1502
+DIOCXROLLBACK,struct pfioc_trans,12,12.1src/sys/net/pfvar.h,1503
+IPSECGREQID,struct ifreq,32,12.1src/sys/net/if_ipsec.h,36
+IPSECSREQID,struct ifreq,32,12.1src/sys/net/if_ipsec.h,37
+GIFGOPTS,struct ifreq,32,12.1src/sys/net/if_gif.h,125
+GIFSOPTS,struct ifreq,32,12.1src/sys/net/if_gif.h,126

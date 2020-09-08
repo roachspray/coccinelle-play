@@ -201,32 +201,6 @@ main(int argc, char **argv)
 	 printf("CDIOREADTOCENTRYS,struct ioc_read_toc_entry,%zu,12.1src/sys/sys/cdio.h,162\n", sizeof(struct ioc_read_toc_entry));
 	// CDIOREADTOCHEADER 12.1src/sys/sys/cdio.h:153
 	 printf("CDIOREADTOCHEADER,struct ioc_toc_header,%zu,12.1src/sys/sys/cdio.h,153\n", sizeof(struct ioc_toc_header));
-	// IPMICTL_GET_MY_ADDRESS_CMD 12.1src/sys/sys/ipmi.h:53
-	 printf("IPMICTL_GET_MY_ADDRESS_CMD,unsigned int,%zu,12.1src/sys/sys/ipmi.h,53\n", sizeof(unsigned int));
-	// IPMICTL_GET_MY_LUN_CMD 12.1src/sys/sys/ipmi.h:55
-	 printf("IPMICTL_GET_MY_LUN_CMD,unsigned int,%zu,12.1src/sys/sys/ipmi.h,55\n", sizeof(unsigned int));
-	// IPMICTL_RECEIVE_MSG 12.1src/sys/sys/ipmi.h:47
-	 printf("IPMICTL_RECEIVE_MSG,struct ipmi_recv,%zu,12.1src/sys/sys/ipmi.h,47\n", sizeof(struct ipmi_recv));
-	// IPMICTL_RECEIVE_MSG_32 12.1src/sys/sys/ipmi.h:154
-	 printf("IPMICTL_RECEIVE_MSG_32,struct ipmi_recv32,%zu,12.1src/sys/sys/ipmi.h,154\n", sizeof(struct ipmi_recv32));
-	// IPMICTL_RECEIVE_MSG_TRUNC 12.1src/sys/sys/ipmi.h:46
-	 printf("IPMICTL_RECEIVE_MSG_TRUNC,struct ipmi_recv,%zu,12.1src/sys/sys/ipmi.h,46\n", sizeof(struct ipmi_recv));
-	// IPMICTL_RECEIVE_MSG_TRUNC_32 12.1src/sys/sys/ipmi.h:153
-	 printf("IPMICTL_RECEIVE_MSG_TRUNC_32,struct ipmi_recv32,%zu,12.1src/sys/sys/ipmi.h,153\n", sizeof(struct ipmi_recv32));
-	// IPMICTL_REGISTER_FOR_CMD 12.1src/sys/sys/ipmi.h:49
-	 printf("IPMICTL_REGISTER_FOR_CMD,struct ipmi_cmdspec,%zu,12.1src/sys/sys/ipmi.h,49\n", sizeof(struct ipmi_cmdspec));
-	// IPMICTL_SEND_COMMAND 12.1src/sys/sys/ipmi.h:48
-	 printf("IPMICTL_SEND_COMMAND,struct ipmi_req,%zu,12.1src/sys/sys/ipmi.h,48\n", sizeof(struct ipmi_req));
-	// IPMICTL_SEND_COMMAND_32 12.1src/sys/sys/ipmi.h:155
-	 printf("IPMICTL_SEND_COMMAND_32,struct ipmi_req32,%zu,12.1src/sys/sys/ipmi.h,155\n", sizeof(struct ipmi_req32));
-	// IPMICTL_SET_GETS_EVENTS_CMD 12.1src/sys/sys/ipmi.h:51
-	 printf("IPMICTL_SET_GETS_EVENTS_CMD,int,%zu,12.1src/sys/sys/ipmi.h,51\n", sizeof(int));
-	// IPMICTL_SET_MY_ADDRESS_CMD 12.1src/sys/sys/ipmi.h:52
-	 printf("IPMICTL_SET_MY_ADDRESS_CMD,unsigned int,%zu,12.1src/sys/sys/ipmi.h,52\n", sizeof(unsigned int));
-	// IPMICTL_SET_MY_LUN_CMD 12.1src/sys/sys/ipmi.h:54
-	 printf("IPMICTL_SET_MY_LUN_CMD,unsigned int,%zu,12.1src/sys/sys/ipmi.h,54\n", sizeof(unsigned int));
-	// IPMICTL_UNREGISTER_FOR_CMD 12.1src/sys/sys/ipmi.h:50
-	 printf("IPMICTL_UNREGISTER_FOR_CMD,struct ipmi_cmdspec,%zu,12.1src/sys/sys/ipmi.h,50\n", sizeof(struct ipmi_cmdspec));
 	// CONS_BELLTYPE 12.1src/sys/sys/consio.h:122
 	 printf("CONS_BELLTYPE,int,%zu,12.1src/sys/sys/consio.h,122\n", sizeof(int));
 	// CONS_BLANKTIME 12.1src/sys/sys/consio.h:94
@@ -505,30 +479,6 @@ main(int argc, char **argv)
 	 printf("PCIOCREAD,struct pci_io,%zu,12.1src/sys/sys/pciio.h,160\n", sizeof(struct pci_io));
 	// PCIOCWRITE 12.1src/sys/sys/pciio.h:161
 	 printf("PCIOCWRITE,struct pci_io,%zu,12.1src/sys/sys/pciio.h,161\n", sizeof(struct pci_io));
-	// MPTIO_RAID_ACTION 12.1src/sys/sys/mpt_ioctl.h:92
-	 printf("MPTIO_RAID_ACTION,struct mpt_raid_action,%zu,12.1src/sys/sys/mpt_ioctl.h,92\n", sizeof(struct mpt_raid_action));
-	// MPTIO_RAID_ACTION32 12.1src/sys/sys/mpt_ioctl.h:131
-	 printf("MPTIO_RAID_ACTION32,struct mpt_raid_action32,%zu,12.1src/sys/sys/mpt_ioctl.h,131\n", sizeof(struct mpt_raid_action32));
-	// MPTIO_READ_CFG_HEADER 12.1src/sys/sys/mpt_ioctl.h:87
-	 printf("MPTIO_READ_CFG_HEADER,struct mpt_cfg_page_req,%zu,12.1src/sys/sys/mpt_ioctl.h,87\n", sizeof(struct mpt_cfg_page_req));
-	// MPTIO_READ_CFG_HEADER32 12.1src/sys/sys/mpt_ioctl.h:126
-	 printf("MPTIO_READ_CFG_HEADER32,struct mpt_cfg_page_req32,%zu,12.1src/sys/sys/mpt_ioctl.h,126\n", sizeof(struct mpt_cfg_page_req32));
-	// MPTIO_READ_CFG_PAGE 12.1src/sys/sys/mpt_ioctl.h:88
-	 printf("MPTIO_READ_CFG_PAGE,struct mpt_cfg_page_req,%zu,12.1src/sys/sys/mpt_ioctl.h,88\n", sizeof(struct mpt_cfg_page_req));
-	// MPTIO_READ_CFG_PAGE32 12.1src/sys/sys/mpt_ioctl.h:127
-	 printf("MPTIO_READ_CFG_PAGE32,struct mpt_cfg_page_req32,%zu,12.1src/sys/sys/mpt_ioctl.h,127\n", sizeof(struct mpt_cfg_page_req32));
-	// MPTIO_READ_EXT_CFG_HEADER 12.1src/sys/sys/mpt_ioctl.h:89
-	 printf("MPTIO_READ_EXT_CFG_HEADER,struct mpt_ext_cfg_page_req,%zu,12.1src/sys/sys/mpt_ioctl.h,89\n", sizeof(struct mpt_ext_cfg_page_req));
-	// MPTIO_READ_EXT_CFG_HEADER32 12.1src/sys/sys/mpt_ioctl.h:128
-	 printf("MPTIO_READ_EXT_CFG_HEADER32,struct mpt_ext_cfg_page_req32,%zu,12.1src/sys/sys/mpt_ioctl.h,128\n", sizeof(struct mpt_ext_cfg_page_req32));
-	// MPTIO_READ_EXT_CFG_PAGE 12.1src/sys/sys/mpt_ioctl.h:90
-	 printf("MPTIO_READ_EXT_CFG_PAGE,struct mpt_ext_cfg_page_req,%zu,12.1src/sys/sys/mpt_ioctl.h,90\n", sizeof(struct mpt_ext_cfg_page_req));
-	// MPTIO_READ_EXT_CFG_PAGE32 12.1src/sys/sys/mpt_ioctl.h:129
-	 printf("MPTIO_READ_EXT_CFG_PAGE32,struct mpt_ext_cfg_page_req32,%zu,12.1src/sys/sys/mpt_ioctl.h,129\n", sizeof(struct mpt_ext_cfg_page_req32));
-	// MPTIO_WRITE_CFG_PAGE 12.1src/sys/sys/mpt_ioctl.h:91
-	 printf("MPTIO_WRITE_CFG_PAGE,struct mpt_cfg_page_req,%zu,12.1src/sys/sys/mpt_ioctl.h,91\n", sizeof(struct mpt_cfg_page_req));
-	// MPTIO_WRITE_CFG_PAGE32 12.1src/sys/sys/mpt_ioctl.h:130
-	 printf("MPTIO_WRITE_CFG_PAGE32,struct mpt_cfg_page_req32,%zu,12.1src/sys/sys/mpt_ioctl.h,130\n", sizeof(struct mpt_cfg_page_req32));
 	// PPS_IOC_FETCH 12.1src/sys/sys/timepps.h:132
 	 printf("PPS_IOC_FETCH,struct pps_fetch_args,%zu,12.1src/sys/sys/timepps.h,132\n", sizeof(struct pps_fetch_args));
 	// PPS_IOC_FETCH_FFCOUNTER 12.1src/sys/sys/timepps.h:134

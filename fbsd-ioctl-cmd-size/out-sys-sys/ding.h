@@ -9,6 +9,7 @@
 #include "/usr/src/sys/netinet/in.h"                                            
 #include "/usr/src/sys/net/if.h"                                                
 #include "/usr/src/sys/net/if_var.h"                                            
+#include "/usr/src/sys/netinet/ip_mroute.h"
 
 #include "/usr/src/sys/contrib/ipfilter/netinet/ip_fil.h"                                                                                
 #include "/usr/src/sys/netpfil/pf/pf.h"                                         
@@ -30,6 +31,13 @@
 #include "/usr/src/sys/netinet6/nd6.h"
 #include "/usr/src/sys/xen/xen-os.h"
 #include "/usr/src/sys/xen/interface/xen.h"
+
+#include "/usr/src/sys/dev/aac/aacreg.h"
+
+#include "/usr/src/sys/sys/_termios.h"
+#define notdef
+#include "/usr/src/sys/sys/fbio.h"
+#undef notdef
 
 /*------------------------------------------------------------------------*/
 
@@ -128,19 +136,6 @@
 #include "/usr/src/sys/sys/cdio.h"
 #include "/usr/src/sys/sys/cdio.h"
 #include "/usr/src/sys/sys/cdio.h"
-#include "/usr/src/sys/sys/ipmi.h"
-#include "/usr/src/sys/sys/ipmi.h"
-#include "/usr/src/sys/sys/ipmi.h"
-#include "/usr/src/sys/sys/ipmi.h"
-#include "/usr/src/sys/sys/ipmi.h"
-#include "/usr/src/sys/sys/ipmi.h"
-#include "/usr/src/sys/sys/ipmi.h"
-#include "/usr/src/sys/sys/ipmi.h"
-#include "/usr/src/sys/sys/ipmi.h"
-#include "/usr/src/sys/sys/ipmi.h"
-#include "/usr/src/sys/sys/ipmi.h"
-#include "/usr/src/sys/sys/ipmi.h"
-#include "/usr/src/sys/sys/ipmi.h"
 #include "/usr/src/sys/sys/consio.h"
 #include "/usr/src/sys/sys/consio.h"
 #include "/usr/src/sys/sys/consio.h"
