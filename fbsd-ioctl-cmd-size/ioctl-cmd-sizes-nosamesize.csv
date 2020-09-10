@@ -1,0 +1,302 @@
+macro,file,line,type,size_i386,size_amd64
+CTL_DISABLE_PORT,12.1src/sys/cam/ctl/ctl_ioctl.h,760,struct ctl_port_entry,104,112
+CTL_ENABLE_PORT,12.1src/sys/cam/ctl/ctl_ioctl.h,759,struct ctl_port_entry,104,112
+CTL_ERROR_INJECT,12.1src/sys/cam/ctl/ctl_ioctl.h,762,struct ctl_error_desc,328,344
+CTL_ERROR_INJECT_DELETE,12.1src/sys/cam/ctl/ctl_ioctl.h,767,struct ctl_error_desc,328,344
+CTL_GET_LUN_STATS,12.1src/sys/cam/ctl/ctl_ioctl.h,773,struct ctl_get_io_stats,36,56
+CTL_GET_OOA,12.1src/sys/cam/ctl/ctl_ioctl.h,763,struct ctl_ooa,52,72
+CTL_GET_PORT_STATS,12.1src/sys/cam/ctl/ctl_ioctl.h,774,struct ctl_get_io_stats,36,56
+CTL_IO,12.1src/sys/cam/ctl/ctl_ioctl.h,758,union ctl_io,588,672
+CTL_ISCSI,12.1src/sys/cam/ctl/ctl_ioctl.h,769,struct ctl_iscsi,856,864
+CTL_LUN_LIST,12.1src/sys/cam/ctl/ctl_ioctl.h,766,struct ctl_lun_list,208,216
+CTL_LUN_REQ,12.1src/sys/cam/ctl/ctl_ioctl.h,765,struct ctl_lun_req,328,360
+CTL_PORT_LIST,12.1src/sys/cam/ctl/ctl_ioctl.h,771,struct ctl_lun_list,208,216
+CTL_PORT_REQ,12.1src/sys/cam/ctl/ctl_ioctl.h,770,struct ctl_req,224,256
+CTL_SET_PORT_WWNS,12.1src/sys/cam/ctl/ctl_ioctl.h,768,struct ctl_port_entry,104,112
+CAMGETPASSTHRU,12.1src/sys/cam/scsi/scsi_pass.h,42,union ccb,1156,1248
+CAMIOCOMMAND,12.1src/sys/cam/scsi/scsi_pass.h,41,union ccb,1156,1248
+SG_IO,12.1src/sys/cam/scsi/scsi_sg.h,31,struct sg_io_hdr,64,88
+DTRACEIOC_AGGDESC,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1326,dtrace_aggdesc_t *,4,8
+DTRACEIOC_AGGSNAP,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1312,dtrace_bufdesc_t *,4,8
+DTRACEIOC_BUFSNAP,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1302,dtrace_bufdesc_t *,4,8
+DTRACEIOC_DOFGET,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1330,dof_hdr_t *,4,8
+DTRACEIOC_ENABLE,12.1src/sys/cddl/contrib/opensolaris/uts/common/sys/dtrace.h,1310,dtrace_enable_io_t,8,16
+VCHIQ_IOC_AWAIT_COMPLETION,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,113,VCHIQ_AWAIT_COMPLETION_T,20,32
+VCHIQ_IOC_CREATE_SERVICE,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,104,VCHIQ_CREATE_SERVICE_T,28,48
+VCHIQ_IOC_DEQUEUE_MESSAGE,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,115,VCHIQ_DEQUEUE_MESSAGE_T,16,24
+VCHIQ_IOC_DUMP_PHYS_MEM,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,125,VCHIQ_DUMP_MEM_T,8,16
+VCHIQ_IOC_GET_CONFIG,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,118,VCHIQ_GET_CONFIG_T,8,16
+VCHIQ_IOC_QUEUE_BULK_RECEIVE,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,111,VCHIQ_QUEUE_BULK_TRANSFER_T,20,40
+VCHIQ_IOC_QUEUE_BULK_TRANSMIT,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,109,VCHIQ_QUEUE_BULK_TRANSFER_T,20,40
+VCHIQ_IOC_QUEUE_MESSAGE,12.1src/sys/contrib/vchiq/interface/vchiq_arm/vchiq_ioctl.h,107,VCHIQ_QUEUE_MESSAGE_T,12,16
+SIOCADNAT,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,31,struct ipfobj,52,56
+SIOCGNATL,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,34,struct ipfobj,52,56
+SIOCGNATS,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,33,struct ipfobj,52,56
+SIOCPURGENAT,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,35,struct ipfobj,52,56
+SIOCRMNAT,12.1src/sys/contrib/ipfilter/netinet/ip_nat.h,32,struct ipfobj,52,56
+SIOCADAFR,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,82,struct ipfobj,52,56
+SIOCADIFR,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,89,struct ipfobj,52,56
+SIOCAUTHR,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,99,struct ipfobj,52,56
+SIOCAUTHW,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,98,struct ipfobj,52,56
+SIOCFRZST,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,96,struct ipfobj,52,56
+SIOCFUNCL,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,108,struct ipfunc_resolve,44,56
+SIOCGENITER,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,114,struct ipfobj,52,56
+SIOCGETFS,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,86,struct ipfobj,52,56
+SIOCGTABL,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,115,struct ipfobj,52,56
+SIOCGTQTAB,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,118,struct ipfobj,52,56
+SIOCINAFR,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,92,struct ipfobj,52,56
+SIOCINIFR,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,93,struct ipfobj,52,56
+SIOCIPFGET,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,110,struct ipfobj,52,56
+SIOCIPFGETNEXT,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,109,struct ipfobj,52,56
+SIOCIPFITER,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,113,struct ipfobj,52,56
+SIOCIPFSET,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,111,struct ipfobj,52,56
+SIOCLOOKUPITER,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,117,struct ipfobj,52,56
+SIOCMATCHFLUSH,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,119,struct ipfobj,52,56
+SIOCRMAFR,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,83,struct ipfobj,52,56
+SIOCRMIFR,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,90,struct ipfobj,52,56
+SIOCSTAT1,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,100,struct ipfobj,52,56
+SIOCSTAT2,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,105,struct ipfobj,52,56
+SIOCSTGET,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,103,struct ipfobj,52,56
+SIOCSTGSZ,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,104,struct ipfobj,52,56
+SIOCSTPUT,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,102,struct ipfobj,52,56
+SIOCZRLST,12.1src/sys/contrib/ipfilter/netinet/ip_fil.h,97,struct ipfobj,52,56
+SIOCDELST,12.1src/sys/contrib/ipfilter/netinet/ip_state.h,18,struct ipfobj,52,56
+SIOCADSCA,12.1src/sys/contrib/ipfilter/netinet/ip_scan.h,33,struct ipscan *,4,8
+SIOCGSCST,12.1src/sys/contrib/ipfilter/netinet/ip_scan.h,35,struct ipscan *,4,8
+SIOCRMSCA,12.1src/sys/contrib/ipfilter/netinet/ip_scan.h,34,struct ipscan *,4,8
+SIOCLOOKUPADDNODE,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,27,struct iplookupop,36,48
+SIOCLOOKUPADDNODEW,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,28,struct iplookupop,36,48
+SIOCLOOKUPADDTABLE,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,22,struct iplookupop,36,48
+SIOCLOOKUPDELNODE,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,29,struct iplookupop,36,48
+SIOCLOOKUPDELNODEW,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,30,struct iplookupop,36,48
+SIOCLOOKUPDELTABLE,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,23,struct iplookupop,36,48
+SIOCLOOKUPSTAT,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,24,struct iplookupop,36,48
+SIOCLOOKUPSTATW,12.1src/sys/contrib/ipfilter/netinet/ip_lookup.h,25,struct iplookupop,36,48
+SIOCPROXY,12.1src/sys/contrib/ipfilter/netinet/ip_proxy.h,26,struct ap_control,52,72
+VIDIOCGFBUF,12.1src/sys/contrib/v4l/videodev.h,264,struct video_buffer,20,24
+VIDIOCGFREQ,12.1src/sys/contrib/v4l/videodev.h,267,unsigned long,4,8
+VIDIOCGTUNER,12.1src/sys/contrib/v4l/videodev.h,257,struct video_tuner,52,64
+VIDIOCGWIN,12.1src/sys/contrib/v4l/videodev.h,262,struct video_window,32,40
+VIDIOCSFBUF,12.1src/sys/contrib/v4l/videodev.h,265,struct video_buffer,20,24
+VIDIOCSFREQ,12.1src/sys/contrib/v4l/videodev.h,268,unsigned long,4,8
+VIDIOCSMICROCODE,12.1src/sys/contrib/v4l/videodev.h,280,struct video_code,24,32
+VIDIOCSTUNER,12.1src/sys/contrib/v4l/videodev.h,258,struct video_tuner,52,64
+VIDIOCSWIN,12.1src/sys/contrib/v4l/videodev.h,263,struct video_window,32,40
+VIDIOC_DQBUF,12.1src/sys/contrib/v4l/videodev2.h,1683,struct v4l2_buffer,68,88
+VIDIOC_ENUMINPUT,12.1src/sys/contrib/v4l/videodev2.h,1691,struct v4l2_input,76,80
+VIDIOC_ENUMSTD,12.1src/sys/contrib/v4l/videodev2.h,1690,struct v4l2_standard,64,72
+VIDIOC_G_EXT_CTRLS,12.1src/sys/contrib/v4l/videodev2.h,1724,struct v4l2_ext_controls,24,32
+VIDIOC_G_FBUF,12.1src/sys/contrib/v4l/videodev2.h,1679,struct v4l2_framebuffer,44,48
+VIDIOC_G_FMT,12.1src/sys/contrib/v4l/videodev2.h,1675,struct v4l2_format,204,208
+VIDIOC_QBUF,12.1src/sys/contrib/v4l/videodev2.h,1682,struct v4l2_buffer,68,88
+VIDIOC_QUERYBUF,12.1src/sys/contrib/v4l/videodev2.h,1678,struct v4l2_buffer,68,88
+VIDIOC_S_EXT_CTRLS,12.1src/sys/contrib/v4l/videodev2.h,1725,struct v4l2_ext_controls,24,32
+VIDIOC_S_FBUF,12.1src/sys/contrib/v4l/videodev2.h,1680,struct v4l2_framebuffer,44,48
+VIDIOC_S_FMT,12.1src/sys/contrib/v4l/videodev2.h,1676,struct v4l2_format,204,208
+VIDIOC_TRY_EXT_CTRLS,12.1src/sys/contrib/v4l/videodev2.h,1726,struct v4l2_ext_controls,24,32
+VIDIOC_TRY_FMT,12.1src/sys/contrib/v4l/videodev2.h,1717,struct v4l2_format,204,208
+CUSE_IOCTL_ALLOC_MEMORY,12.1src/sys/fs/cuse/cuse_ioctl.h,78,struct cuse_alloc_info,8,16
+CUSE_IOCTL_CREATE_DEV,12.1src/sys/fs/cuse/cuse_ioctl.h,81,struct cuse_create_dev,96,104
+CUSE_IOCTL_DESTROY_DEV,12.1src/sys/fs/cuse/cuse_ioctl.h,82,struct cuse_dev *,4,8
+CUSE_IOCTL_FREE_MEMORY,12.1src/sys/fs/cuse/cuse_ioctl.h,79,struct cuse_alloc_info,8,16
+CUSE_IOCTL_GET_COMMAND,12.1src/sys/fs/cuse/cuse_ioctl.h,73,struct cuse_command,24,48
+CUSE_IOCTL_READ_DATA,12.1src/sys/fs/cuse/cuse_ioctl.h,75,struct cuse_data_chunk,12,24
+CUSE_IOCTL_SET_PFH,12.1src/sys/fs/cuse/cuse_ioctl.h,80,uintptr_t,4,8
+CUSE_IOCTL_WRITE_DATA,12.1src/sys/fs/cuse/cuse_ioctl.h,74,struct cuse_data_chunk,12,24
+SIOCGLAGG,12.1src/sys/net/if_lagg.h,127,struct lagg_reqall,64,80
+SIOCSLAGG,12.1src/sys/net/if_lagg.h,128,struct lagg_reqall,64,80
+BIOCGDLTLIST,12.1src/sys/net/bpf.h,140,struct bpf_dltlist,8,16
+BIOCGETZMAX,12.1src/sys/net/bpf.h,146,size_t,4,8
+BIOCGRTIMEOUT,12.1src/sys/net/bpf.h,129,struct timeval,8,16
+BIOCROTZBUF,12.1src/sys/net/bpf.h,147,struct bpf_zbuf,12,24
+BIOCSETF,12.1src/sys/net/bpf.h,122,struct bpf_program,8,16
+BIOCSETFNR,12.1src/sys/net/bpf.h,149,struct bpf_program,8,16
+BIOCSETWF,12.1src/sys/net/bpf.h,142,struct bpf_program,8,16
+BIOCSETZBUF,12.1src/sys/net/bpf.h,148,struct bpf_zbuf,12,24
+BIOCSRTIMEOUT,12.1src/sys/net/bpf.h,128,struct timeval,8,16
+DIOCADDADDR,12.1src/sys/net/pfvar.h,1475,struct pfioc_pooladdr,1112,1136
+DIOCADDALTQV0,12.1src/sys/net/pfvar.h,1464,struct pfioc_altq_v0,236,256
+DIOCADDALTQV1,12.1src/sys/net/pfvar.h,1465,struct pfioc_altq_v1,272,304
+DIOCADDRULE,12.1src/sys/net/pfvar.h,1441,struct pfioc_rule,2940,3040
+DIOCBEGINADDRS,12.1src/sys/net/pfvar.h,1474,struct pfioc_pooladdr,1112,1136
+DIOCCHANGEADDR,12.1src/sys/net/pfvar.h,1478,struct pfioc_pooladdr,1112,1136
+DIOCCHANGEALTQV0,12.1src/sys/net/pfvar.h,1470,struct pfioc_altq_v0,236,256
+DIOCCHANGEALTQV1,12.1src/sys/net/pfvar.h,1471,struct pfioc_altq_v1,272,304
+DIOCCHANGERULE,12.1src/sys/net/pfvar.h,1453,struct pfioc_rule,2940,3040
+DIOCCLRIFFLAG,12.1src/sys/net/pfvar.h,1509,struct pfioc_iface,36,40
+DIOCCLRSTATES,12.1src/sys/net/pfvar.h,1445,struct pfioc_state_kill,204,224
+DIOCGETADDR,12.1src/sys/net/pfvar.h,1477,struct pfioc_pooladdr,1112,1136
+DIOCGETADDRS,12.1src/sys/net/pfvar.h,1476,struct pfioc_pooladdr,1112,1136
+DIOCGETALTQSV0,12.1src/sys/net/pfvar.h,1466,struct pfioc_altq_v0,236,256
+DIOCGETALTQSV1,12.1src/sys/net/pfvar.h,1467,struct pfioc_altq_v1,272,304
+DIOCGETALTQV0,12.1src/sys/net/pfvar.h,1468,struct pfioc_altq_v0,236,256
+DIOCGETALTQV1,12.1src/sys/net/pfvar.h,1469,struct pfioc_altq_v1,272,304
+DIOCGETQSTATSV0,12.1src/sys/net/pfvar.h,1472,struct pfioc_qstats_v0,20,24
+DIOCGETQSTATSV1,12.1src/sys/net/pfvar.h,1473,struct pfioc_qstats_v1,24,32
+DIOCGETRULE,12.1src/sys/net/pfvar.h,1443,struct pfioc_rule,2940,3040
+DIOCGETRULES,12.1src/sys/net/pfvar.h,1442,struct pfioc_rule,2940,3040
+DIOCGETSRCNODES,12.1src/sys/net/pfvar.h,1504,struct pfioc_src_nodes,8,16
+DIOCGETSTATES,12.1src/sys/net/pfvar.h,1452,struct pfioc_states,8,16
+DIOCGIFSPEEDV1,12.1src/sys/net/pfvar.h,1527,struct pf_ifspeed_v1,28,32
+DIOCIGETIFACES,12.1src/sys/net/pfvar.h,1507,struct pfioc_iface,36,40
+DIOCKILLSRCNODES,12.1src/sys/net/pfvar.h,1510,struct pfioc_src_node_kill,104,128
+DIOCKILLSTATES,12.1src/sys/net/pfvar.h,1461,struct pfioc_state_kill,204,224
+DIOCOSFPADD,12.1src/sys/net/pfvar.h,1499,struct pf_osfp_ioctl,132,136
+DIOCOSFPGET,12.1src/sys/net/pfvar.h,1500,struct pf_osfp_ioctl,132,136
+DIOCRADDADDRS,12.1src/sys/net/pfvar.h,1489,struct pfioc_table,1100,1104
+DIOCRADDTABLES,12.1src/sys/net/pfvar.h,1483,struct pfioc_table,1100,1104
+DIOCRCLRADDRS,12.1src/sys/net/pfvar.h,1488,struct pfioc_table,1100,1104
+DIOCRCLRASTATS,12.1src/sys/net/pfvar.h,1494,struct pfioc_table,1100,1104
+DIOCRCLRTABLES,12.1src/sys/net/pfvar.h,1482,struct pfioc_table,1100,1104
+DIOCRCLRTSTATS,12.1src/sys/net/pfvar.h,1487,struct pfioc_table,1100,1104
+DIOCRDELADDRS,12.1src/sys/net/pfvar.h,1490,struct pfioc_table,1100,1104
+DIOCRDELTABLES,12.1src/sys/net/pfvar.h,1484,struct pfioc_table,1100,1104
+DIOCRGETADDRS,12.1src/sys/net/pfvar.h,1492,struct pfioc_table,1100,1104
+DIOCRGETASTATS,12.1src/sys/net/pfvar.h,1493,struct pfioc_table,1100,1104
+DIOCRGETTABLES,12.1src/sys/net/pfvar.h,1485,struct pfioc_table,1100,1104
+DIOCRGETTSTATS,12.1src/sys/net/pfvar.h,1486,struct pfioc_table,1100,1104
+DIOCRINADEFINE,12.1src/sys/net/pfvar.h,1497,struct pfioc_table,1100,1104
+DIOCRSETADDRS,12.1src/sys/net/pfvar.h,1491,struct pfioc_table,1100,1104
+DIOCRSETTFLAGS,12.1src/sys/net/pfvar.h,1496,struct pfioc_table,1100,1104
+DIOCRTSTADDRS,12.1src/sys/net/pfvar.h,1495,struct pfioc_table,1100,1104
+DIOCSETIFFLAG,12.1src/sys/net/pfvar.h,1508,struct pfioc_iface,36,40
+DIOCXBEGIN,12.1src/sys/net/pfvar.h,1501,struct pfioc_trans,12,16
+DIOCXCOMMIT,12.1src/sys/net/pfvar.h,1502,struct pfioc_trans,12,16
+DIOCXROLLBACK,12.1src/sys/net/pfvar.h,1503,struct pfioc_trans,12,16
+SIOCG80211,12.1src/sys/net80211/ieee80211_ioctl.h,601,struct ieee80211req,28,32
+SIOCS80211,12.1src/sys/net80211/ieee80211_ioctl.h,600,struct ieee80211req,28,32
+NETDUMPGCONF,12.1src/sys/netinet/netdump/netdump.h,73,struct netdump_conf,104,112
+NETDUMPSCONF,12.1src/sys/netinet/netdump/netdump.h,74,struct netdump_conf,104,112
+OSIOCAIFADDR_IN6,12.1src/sys/netinet6/in6_var.h,443,struct oin6_aliasreq,120,128
+SIOCAIFADDR_IN6,12.1src/sys/netinet6/in6_var.h,444,struct in6_aliasreq,124,136
+SIOCGDEFIFACE_IN6,12.1src/sys/netinet6/in6_var.h,467,struct in6_ndifreq,20,24
+SIOCGETMIFCNT_IN6,12.1src/sys/netinet6/in6_var.h,487,struct sioc_mif_req6,36,40
+SIOCGNBRINFO_IN6,12.1src/sys/netinet6/in6_var.h,458,struct in6_nbrinfo,48,56
+SIOCSDEFIFACE_IN6,12.1src/sys/netinet6/in6_var.h,466,struct in6_ndifreq,20,24
+SIOCSIFPHYADDR_IN6,12.1src/sys/netinet6/in6_var.h,446,struct in6_aliasreq,124,136
+SMBIOC_LOOKUP,12.1src/sys/netsmb/smb_dev.h,149,struct smbioc_lookup,764,776
+SMBIOC_OPENSESSION,12.1src/sys/netsmb/smb_dev.h,144,struct smbioc_ossn,476,488
+SMBIOC_READ,12.1src/sys/netsmb/smb_dev.h,150,struct smbioc_rw,20,32
+SMBIOC_REQUEST,12.1src/sys/netsmb/smb_dev.h,146,struct smbioc_rq,36,64
+SMBIOC_T2RQ,12.1src/sys/netsmb/smb_dev.h,147,struct smbioc_t2rq,48,88
+SMBIOC_WRITE,12.1src/sys/netsmb/smb_dev.h,151,struct smbioc_rw,20,32
+SIOCAIFGROUP,12.1src/sys/sys/sockio.h,133,struct ifgroupreq,36,40
+SIOCDIFGROUP,12.1src/sys/sys/sockio.h,135,struct ifgroupreq,36,40
+SIOCGDRVSPEC,12.1src/sys/sys/sockio.h,125,struct ifdrv,28,40
+SIOCGETSGCNT,12.1src/sys/sys/sockio.h,52,struct sioc_sg_req,20,32
+SIOCGETVIFCNT,12.1src/sys/sys/sockio.h,51,struct sioc_vif_req,20,40
+SIOCGIFCONF,12.1src/sys/sys/sockio.h,66,struct ifconf,8,16
+SIOCGIFGMEMB,12.1src/sys/sys/sockio.h,136,struct ifgroupreq,36,40
+SIOCGIFGROUP,12.1src/sys/sys/sockio.h,134,struct ifgroupreq,36,40
+SIOCGIFMEDIA,12.1src/sys/sys/sockio.h,94,struct ifmediareq,40,48
+SIOCGIFXMEDIA,12.1src/sys/sys/sockio.h,137,struct ifmediareq,40,48
+SIOCIFGCLONERS,12.1src/sys/sys/sockio.h,131,struct if_clonereq,12,16
+SIOCSDRVSPEC,12.1src/sys/sys/sockio.h,123,struct ifdrv,28,40
+CDIOCCAPABILITY,12.1src/sys/sys/cdio.h,275,struct ioc_capability,12,24
+CDIOCREADSUBCHANNEL,12.1src/sys/sys/cdio.h,145,struct ioc_read_subchannel,12,16
+CDIOREADTOCENTRYS,12.1src/sys/sys/cdio.h,162,struct ioc_read_toc_entry,8,16
+CONS_GSAVER,12.1src/sys/sys/consio.h,106,ssaver_t,24,32
+CONS_SCRSHOT,12.1src/sys/sys/consio.h,310,scrshot_t,20,24
+CONS_SSAVER,12.1src/sys/sys/consio.h,105,ssaver_t,24,32
+GIO_VFONT,12.1src/sys/sys/consio.h,250,vfnt_t,48,72
+PIO_VFONT,12.1src/sys/sys/consio.h,249,vfnt_t,48,72
+IOCATAREQUEST,12.1src/sys/sys/ata.h,1004,struct ata_ioc_request,56,64
+EFIIOC_GET_TABLE,12.1src/sys/sys/efiio.h,51,struct efi_get_table_ioc,20,24
+EFIIOC_VAR_GET,12.1src/sys/sys/efiio.h,54,struct efi_var_ioc,36,56
+EFIIOC_VAR_NEXT,12.1src/sys/sys/efiio.h,55,struct efi_var_ioc,36,56
+EFIIOC_VAR_SET,12.1src/sys/sys/efiio.h,56,struct efi_var_ioc,36,56
+DEV_ATTACH,12.1src/sys/sys/bus.h,121,struct devreq,140,152
+DEV_CLEAR_DRIVER,12.1src/sys/sys/bus.h,128,struct devreq,140,152
+DEV_DELETE,12.1src/sys/sys/bus.h,130,struct devreq,140,152
+DEV_DETACH,12.1src/sys/sys/bus.h,122,struct devreq,140,152
+DEV_DISABLE,12.1src/sys/sys/bus.h,124,struct devreq,140,152
+DEV_ENABLE,12.1src/sys/sys/bus.h,123,struct devreq,140,152
+DEV_FREEZE,12.1src/sys/sys/bus.h,131,struct devreq,140,152
+DEV_RESCAN,12.1src/sys/sys/bus.h,129,struct devreq,140,152
+DEV_RESET,12.1src/sys/sys/bus.h,133,struct devreq,140,152
+DEV_RESUME,12.1src/sys/sys/bus.h,126,struct devreq,140,152
+DEV_SET_DRIVER,12.1src/sys/sys/bus.h,127,struct devreq,140,152
+DEV_SUSPEND,12.1src/sys/sys/bus.h,125,struct devreq,140,152
+DEV_THAW,12.1src/sys/sys/bus.h,132,struct devreq,140,152
+MEMRANGE_GET,12.1src/sys/sys/memrange.h,45,struct mem_range_op,12,16
+MEMRANGE_SET,12.1src/sys/sys/memrange.h,46,struct mem_range_op,12,16
+MTIOCEXTGET,12.1src/sys/sys/mtio.h,342,struct mtextget,208,216
+MTIOCEXTLOCATE,12.1src/sys/sys/mtio.h,341,struct mtlocate,92,96
+MTIOCPARAMGET,12.1src/sys/sys/mtio.h,343,struct mtextget,208,216
+MTIOCPARAMSET,12.1src/sys/sys/mtio.h,344,struct mtparamset,268,272
+MTIOCSETLIST,12.1src/sys/sys/mtio.h,345,struct mtsetlist,12,16
+CPUCTL_MSRCBIT,12.1src/sys/sys/cpuctl.h,60,cpuctl_msr_args_t,12,16
+CPUCTL_MSRSBIT,12.1src/sys/sys/cpuctl.h,59,cpuctl_msr_args_t,12,16
+CPUCTL_RDMSR,12.1src/sys/sys/cpuctl.h,55,cpuctl_msr_args_t,12,16
+CPUCTL_UPDATE,12.1src/sys/sys/cpuctl.h,58,cpuctl_update_args_t,8,16
+CPUCTL_WRMSR,12.1src/sys/sys/cpuctl.h,56,cpuctl_msr_args_t,12,16
+PCIOCBARMMAP,12.1src/sys/sys/pciio.h,165,struct pci_bar_mmap,40,48
+PCIOCGETCONF,12.1src/sys/sys/pciio.h,159,struct pci_conf_io,36,48
+PCIOCLISTVPD,12.1src/sys/sys/pciio.h,164,struct pci_list_vpd_io,16,24
+PPS_IOC_FETCH,12.1src/sys/sys/timepps.h,132,struct pps_fetch_args,48,88
+PPS_IOC_FETCH_FFCOUNTER,12.1src/sys/sys/timepps.h,134,struct pps_fetch_ffc_args,64,104
+PPS_IOC_GETPARAMS,12.1src/sys/sys/timepps.h,130,pps_params_t,32,56
+PPS_IOC_SETPARAMS,12.1src/sys/sys/timepps.h,129,pps_params_t,32,56
+MDIOCATTACH,12.1src/sys/sys/mdioctl.h,81,struct md_ioctl,436,448
+MDIOCDETACH,12.1src/sys/sys/mdioctl.h,82,struct md_ioctl,436,448
+MDIOCLIST,12.1src/sys/sys/mdioctl.h,84,struct md_ioctl,436,448
+MDIOCQUERY,12.1src/sys/sys/mdioctl.h,83,struct md_ioctl,436,448
+MDIOCRESIZE,12.1src/sys/sys/mdioctl.h,85,struct md_ioctl,436,448
+ALT_READ_TG_MEM,12.1src/sys/sys/tiio.h,330,struct tg_mem,12,24
+ALT_WRITE_TG_MEM,12.1src/sys/sys/tiio.h,331,struct tg_mem,12,24
+TIIOCGETTRACE,12.1src/sys/sys/tiio.h,323,struct ti_trace_buf,16,24
+CDRIOCSENDCUE,12.1src/sys/sys/cdrio.h,129,struct cdr_cuesheet,20,32
+DIOCGATTR,12.1src/sys/sys/disk.h,142,struct diocgattr_arg,324,328
+DIOCSKERNELDUMP,12.1src/sys/sys/disk.h,154,struct diocskerneldump_arg,76,80
+DIOCZONECMD,12.1src/sys/sys/disk.h,144,struct disk_zone_args,108,128
+PIOCSTATUS,12.1src/sys/sys/pioctl.h,61,struct procfs_status,20,32
+PIOCWAIT,12.1src/sys/sys/pioctl.h,58,struct procfs_status,20,32
+IOV_CONFIG,12.1src/sys/sys/iov.h,254,struct pci_iov_arg,8,16
+IOV_GET_SCHEMA,12.1src/sys/sys/iov.h,256,struct pci_iov_schema,12,24
+AIOGCAP,12.1src/sys/sys/soundcard.h,306,snd_capabilities,28,56
+AIOGFMT,12.1src/sys/sys/soundcard.h,250,snd_chan_param,16,32
+AIOSFMT,12.1src/sys/sys/soundcard.h,251,snd_chan_param,16,32
+AIOSYNC,12.1src/sys/sys/soundcard.h,287,snd_sync_parm,8,16
+SNDCTL_DSP_CURRENT_IPTR,12.1src/sys/sys/soundcard.h,1669,oss_count_t,140,144
+SNDCTL_DSP_CURRENT_OPTR,12.1src/sys/sys/soundcard.h,1670,oss_count_t,140,144
+SNDCTL_DSP_GETERROR,12.1src/sys/sys/soundcard.h,1597,audio_errinfo,104,112
+SNDCTL_DSP_MAPINBUF,12.1src/sys/sys/soundcard.h,941,buffmem_desc,8,16
+SNDCTL_DSP_MAPOUTBUF,12.1src/sys/sys/soundcard.h,942,buffmem_desc,8,16
+SNDCTL_MIDI_INFO,12.1src/sys/sys/soundcard.h,328,struct midi_info,116,128
+SNDCTL_PMGR_ACCESS,12.1src/sys/sys/soundcard.h,333,struct patmgr_info,4024,8040
+SNDCTL_PMGR_IFACE,12.1src/sys/sys/soundcard.h,476,struct patmgr_info,4024,8040
+SNDCTL_SYNTH_INFO,12.1src/sys/sys/soundcard.h,318,struct synth_info,140,152
+FIODGNAME,12.1src/sys/sys/filio.h,60,struct fiodgname_arg,8,16
+FBIOGCURSOR,12.1src/sys/sys/fbio.h,269,struct fbcursor,44,72
+FBIOGETCMAP,12.1src/sys/sys/fbio.h,201,struct fbcmap,20,32
+FBIOGETCMAPI,12.1src/sys/sys/fbio.h,330,struct fbcmap_i,28,40
+FBIOGINFO,12.1src/sys/sys/fbio.h,187,struct fbinfo,24,32
+FBIOGXINFO,12.1src/sys/sys/fbio.h,291,struct brd_info,16,24
+FBIOMONINFO,12.1src/sys/sys/fbio.h,313,struct mon_info,32,56
+FBIOPUTCMAP,12.1src/sys/sys/fbio.h,200,struct fbcmap,20,32
+FBIOPUTCMAPI,12.1src/sys/sys/fbio.h,329,struct fbcmap_i,28,40
+FBIOSCURSOR,12.1src/sys/sys/fbio.h,268,struct fbcursor,44,72
+FBIO_ADPINFO,12.1src/sys/sys/fbio.h,590,struct video_adapter_info,164,208
+FBIO_FINDMODE,12.1src/sys/sys/fbio.h,594,struct video_info,164,192
+FBIO_GETPALETTE,12.1src/sys/sys/fbio.h,611,video_color_palette_t,24,40
+FBIO_MODEINFO,12.1src/sys/sys/fbio.h,593,struct video_info,164,192
+FBIO_SETPALETTE,12.1src/sys/sys/fbio.h,612,video_color_palette_t,24,40
+SPIGENIOC_TRANSFER,12.1src/sys/sys/spigenio.h,48,struct spigen_transfer,16,32
+SPIGENIOC_TRANSFER_MMAPPED,12.1src/sys/sys/spigenio.h,50,struct spigen_transfer_mmapped,8,16
+TIOCTIMESTAMP,12.1src/sys/sys/ttycom.h,83,struct timeval,8,16
+CHIOGSTATUS,12.1src/sys/sys/chio.h,280,struct changer_element_status_request,12,16
+OCHIOGSTATUS,12.1src/sys/sys/chio.h,278,struct changer_element_status_request,12,16
+CFIOCQRY,12.1src/sys/sys/cfictl.h,47,struct cfiocqry,12,24
+CIOCCRYPT,12.1src/sys/opencrypto/cryptodev.h,343,struct crypt_op,28,48
+CIOCCRYPTAEAD,12.1src/sys/opencrypto/cryptodev.h,349,struct crypt_aead,40,64
+CIOCGSESSION,12.1src/sys/opencrypto/cryptodev.h,341,struct session_op,28,48
+CIOCGSESSION2,12.1src/sys/opencrypto/cryptodev.h,346,struct session2_op,48,64
+CIOCKEY,12.1src/sys/opencrypto/cryptodev.h,344,struct crypt_kop,80,144
+CIOCKEY2,12.1src/sys/opencrypto/cryptodev.h,347,struct crypt_kop,80,144
+IOCTL_GNTDEV_ALLOC_GREF,12.1src/sys/xen/gntdev.h,133,struct ioctl_gntdev_alloc_gref,20,24
+IOCTL_GNTDEV_DEALLOC_GREF,12.1src/sys/xen/gntdev.h,148,struct ioctl_gntdev_dealloc_gref,12,16
+IOCTL_GNTDEV_GET_OFFSET_FOR_VADDR,12.1src/sys/xen/gntdev.h,183,struct ioctl_gntdev_get_offset_for_vaddr,20,24
+IOCTL_GNTDEV_MAP_GRANT_REF,12.1src/sys/xen/gntdev.h,163,struct ioctl_gntdev_map_grant_ref,20,24
+IOCTL_GNTDEV_UNMAP_GRANT_REF,12.1src/sys/xen/gntdev.h,175,struct ioctl_gntdev_unmap_grant_ref,12,16
+IOCTL_PRIVCMD_HYPERCALL,12.1src/sys/xen/privcmd.h,54,struct ioctl_privcmd_hypercall,28,56
+IOCTL_PRIVCMD_MMAPBATCH,12.1src/sys/xen/privcmd.h,56,struct ioctl_privcmd_mmapbatch,20,32
