@@ -42,21 +42,33 @@ def getcsvpaths(path_prefix, arch):
 	return rv
 
 def main():
-	if len(sys.argv) != 3:
-		print("usage: merge-csv-files.py <path> <outfile>")
+	if len(sys.argv) != 3 and len(sys.argv) != 4:
+		print("usage: merge-csv-files.py [--ignore-same-size] <path> <outfile>")
 		print("   path should be to the parent dir of out-sys-* dirs")
 		sys.exit(1)
 
-	p_i386 = getcsvpaths(sys.argv[1], "i386")
+	ignore_same_size = False
+	if len(sys.argv) == 3:
+		path_prefix = sys.argv[1]
+		out_file = sys.argv[2]
+	if len(sys.argv) == 4:
+		ignore_same_size = True
+		path_prefix = sys.argv[2]
+		out_file = sys.argv[3]
+
+	p_i386 = getcsvpaths(path_prefix, "i386")
 	r_combined = {}
 	for p in p_i386.values():
 		r = csv2dict(p, "i386")
 		p_amd64 = p.replace("i386", "amd64")
 		r_amd64 = csv2dict(p_amd64, "amd64")
-		for k in r.keys():
+		for k in list(r.keys()):
+			if ignore_same_size == True and r[k][-1] == r_amd64[k][-1]:
+				del r[k]
+				continue
 			r[k].append(r_amd64[k][-1])
 		r_combined.update(r)
-	with open(sys.argv[2], "wt") as h:
+	with open(out_file, "wt") as h:
 		h.write("macro,file,line,type,size_i386,size_amd64\n")
 		for r in r_combined.keys():
 			h.write("{},{},{},{},{},{}\n".format(r, r_combined[r][0],
